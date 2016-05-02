@@ -1,0 +1,80 @@
+/*
+sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
+sass assets/scss/custom.scss:assets/css/custom.css --style compact
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* font imports
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*script*/
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+/*sans serif*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/*serif*/
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+/*monospace*/
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* global variables
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/** variables -- fonts **/
+$monoSpaceFont: Inconsolata, Courier, monospace;
+$serifFont: 'Arvo', Times, serif;
+$sansSerifFont: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+/** variables -- sizes **/
+
+/** variables -- colors **/
+$coreBackgroundColor: #7baaf7;
+$coreHyperlink: #00a;
+$subtleGray: #eee;
+$light: #efefef;
+$activeCallout: #a29e5e;
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* resets
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-family: $serifFont;
+}
+
+p {
+}
+
+a { color: $coreHyperlink; }
+a:hover { color: $coreHyperlink; }
+a:visited { color: $coreHyperlink; }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Bootstrap overrides
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* custom styles
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* responsive
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
