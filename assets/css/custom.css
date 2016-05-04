@@ -26,6 +26,8 @@ sass assets/scss/custom.scss:assets/css/custom.css --style compact
 
 html, body { height: 100%; }
 
+body { margin-top: 50px; }
+
 h1, h2, h3, h4, h5, h6 { font-weight: 600; font-family: "Arvo", Times, serif; }
 
 a { color: #00a; }
