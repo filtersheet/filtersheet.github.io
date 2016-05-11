@@ -32,11 +32,45 @@ $sansSerifFont: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 /** variables -- sizes **/
 
 /** variables -- colors **/
-$coreBackgroundColor: #7baaf7;
-$coreHyperlink: #00a;
-$subtleGray: #eee;
-$light: #efefef;
-$activeCallout: #a29e5e;
+$coreHyperlink: #23a09b;
+$offWhite: #fdfdfd;
+$lightTone: #2cda9d;
+$brightTone: #feef9a;
+$darkTone: #1a181b;
+$grayBase: #2aa19b;
+$borderColor: #eef1f2;
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Responsive breakpoints
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+$xs: ( max:  767px ); /* small screens - phones */
+$sm: ( min:  768px ); /* small screens - tablets */
+$md: ( min:  992px ); /* medium screens - desktops,laptops */
+$lg: ( min: 1200px ); /* large screens - desktops,laptops */
+
+/* Breakpoint helpers */
+$xs_max: ( max: map-get($sm, min) - 1 ); /* smaller than small */
+$sm_only: ( min: map-get($sm, min), max: map-get($md, min) - 1);
+$md_only: ( min: map-get($md, min), max: map-get($lg, min) - 1);
+$sm_max: ( max: map-get($md, min) - 1 ); /* smaller than medium */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* mixins
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@mixin breakpoint($map) {
+    $query: "";
+    @if map-has-key($map, min) {
+        $query: append($query, "(min-width: #{map-get($map, min)})")
+    }
+    @if map-has-key($map, min) and map-has-key($map, max) {
+        $query: append($query, "and")
+    }
+    @if map-has-key($map, max) {
+        $query: append($query, "(max-width: #{map-get($map, max)})")
+    }
+    @media screen and #{$query} { @content; }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
@@ -50,6 +84,9 @@ $activeCallout: #a29e5e;
 html, body { height: 100%; }
 
 body {
+}
+
+body.fixed-top-navigation {
     margin-top: 50px;
 }
 
@@ -71,11 +108,142 @@ a:visited { color: $coreHyperlink; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-narrow {
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+@include breakpoint($sm_max) {
+    .row {
+        padding-right: .5em;
+        padding-left: .5em;
+    }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* palettes
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.palette {}
+
+.palette h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.palette h3 {
+  font-size: 2em;
+  font-weight: 400;
+  color: $darkTone;
+}
+
+.horizontal-padding-small {
+  padding: .8em 0 .8em 0;
+}
+
+.horizontal-padding-medium {
+  padding: 2.2em 0 2.2em 0;
+}
+
+.horizontal-padding-large {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.horizontal-padding-extra-large {
+  padding: 12em 0 12em 0;
+}
+
+.horizontal-padding-banner-sized {
+  padding-top: 15em;
+  padding-bottom: 18em;
+}
+
+.horizontal-padding-top {
+  padding-top: 6em;
+}
+
+.horizontal-padding-top-large {
+  padding-top: 12em;
+}
+
+.background-bright {
+  background-color: lighten( $brightTone, 9% );
+  color: $darkTone;
+}
+
+.background-light {
+  background-color: lighten( $lightTone, 32% );
+  color: $darkTone;
+}
+
+.background-dark-tone {
+  background-color: $darkTone;
+  background: linear-gradient( lighten( $darkTone, 22% ), $darkTone );
+  color: $offWhite;
+}
+
+.background-light-tone {
+  background-color: $lightTone;
+  background: linear-gradient( $lightTone, lighten( $lightTone, 22% ) );
+  color: $darkTone;
+}
+
+.background-gray {
+  background-color: $grayBase;
+  background: linear-gradient( $grayBase, darken( $grayBase, 22% ) );
+  color: $darkTone;
+}
+
+.angled-top-down-left {
+  -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+}
+
+.angled-top-down-right {
+  -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+}
+
+.angled-bottom-down-left {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.angled-bottom-down-right {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.text-shadow-dark {
+    text-shadow: 1px 1px 1px $darkTone;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-dark {
+  color: $darkTone;
+}
+
+.text-gray {
+  color: $grayBase;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom styles
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* responsive
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

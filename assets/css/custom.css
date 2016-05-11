@@ -20,30 +20,94 @@ sass assets/scss/custom.scss:assets/css/custom.css --style compact
 /** variables -- sizes **/
 /** variables -- colors **/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Responsive breakpoints
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* small screens - phones */
+/* small screens - tablets */
+/* medium screens - desktops,laptops */
+/* large screens - desktops,laptops */
+/* Breakpoint helpers */
+/* smaller than small */
+/* smaller than medium */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* mixins
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* resets
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 * { margin: 0; padding: 0; }
 
 html, body { height: 100%; }
 
-body { margin-top: 50px; }
+body.fixed-top-navigation { margin-top: 50px; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 600; font-family: "Arvo", Times, serif; }
 
-a { color: #00a; }
+a { color: #23a09b; }
 
-a:hover { color: #00a; }
+a:hover { color: #23a09b; }
 
-a:visited { color: #00a; }
+a:visited { color: #23a09b; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Bootstrap overrides
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container-full { margin: 0 auto; width: 100%; }
+
+.container-narrow { width: 760px; margin-right: auto; margin-left: auto; }
+
+.row { margin-right: 0px; margin-left: 0px; }
+
+@media screen and (max-width: 991px) { .row { padding-right: .5em; padding-left: .5em; } }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* palettes
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.palette h2 { font-size: 2.5em; font-weight: 700; }
+
+.palette h3 { font-size: 2em; font-weight: 400; color: #1a181b; }
+
+.horizontal-padding-small { padding: .8em 0 .8em 0; }
+
+.horizontal-padding-medium { padding: 2.2em 0 2.2em 0; }
+
+.horizontal-padding-large { padding-top: 5em; padding-bottom: 5em; }
+
+.horizontal-padding-extra-large { padding: 12em 0 12em 0; }
+
+.horizontal-padding-banner-sized { padding-top: 15em; padding-bottom: 18em; }
+
+.horizontal-padding-top { padding-top: 6em; }
+
+.horizontal-padding-top-large { padding-top: 12em; }
+
+.background-bright { background-color: #fef6c7; color: #1a181b; }
+
+.background-light { background-color: #b7f2dd; color: #1a181b; }
+
+.background-dark-tone { background-color: #1a181b; background: linear-gradient(#534d56, #1a181b); color: #fdfdfd; }
+
+.background-light-tone { background-color: #2cda9d; background: linear-gradient(#2cda9d, #8bebc9); color: #1a181b; }
+
+.background-gray { background-color: #2aa19b; background: linear-gradient(#2aa19b, #134845); color: #1a181b; }
+
+.angled-top-down-left { -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%); }
+
+.angled-top-down-right { -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%); }
+
+.angled-bottom-down-left { -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); }
+
+.angled-bottom-down-right { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%); }
+
+.text-shadow-dark { text-shadow: 1px 1px 1px #1a181b; }
+
+.text-white { color: #fff; }
+
+.text-dark { color: #1a181b; }
+
+.text-gray { color: #2aa19b; }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom styles
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* responsive
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*# sourceMappingURL=custom.css.map */
