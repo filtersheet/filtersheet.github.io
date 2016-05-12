@@ -1,26 +1,19 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">{{ site.title }}</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-defadivt">Submit</button>
-            </form>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-</nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12">
+                {% if page.searchable == 'true' %}
+                    <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="hidden-xs hidden-sm hidden-md brand">{{ site.title }}</a>
+                    <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="hidden-lg brand">{{ site.shortTitle }}</a>
+
+                    <input type="search" class="form-control form-top-pad" id="font-filter-box" placeholder="Type to filter using descriptors like 'drink' or 'email' ...">
+                {% else %}
+                    <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="brand">{{ site.title }}</a>
+                {% endif %}
+            </div><!-- /.col -->
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- end main navigation -->
