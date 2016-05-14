@@ -322,7 +322,8 @@ a.brand:hover {
 
 h1.cover {
     font-weight: 400;
-    font-size: 3em;
+    font-size: 4em;
+    color: #fff;
 }
 
 @include breakpoint($sm_max) {
@@ -337,4 +338,5 @@ h2.cover {
     font-family: $sansSerifFont;
     padding-top: 2em;
     font-weight: 100;
+    color: $darkTone;
 }

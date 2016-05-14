@@ -133,9 +133,9 @@ a.brand:hover { color: #23a09b; text-decoration: none; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom styles
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-h1.cover { font-weight: 400; font-size: 3em; }
+h1.cover { font-weight: 400; font-size: 4em; color: #fff; }
 
 @media screen and (max-width: 991px) { h1.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 2em; } }
-h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding-top: 2em; font-weight: 100; }
+h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding-top: 2em; font-weight: 100; color: #1a181b; }
 
 /*# sourceMappingURL=custom.css.map */
