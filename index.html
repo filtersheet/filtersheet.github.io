@@ -3,18 +3,30 @@ layout: landing
 header: "Landing"
 subheader: "Page"
 searchable: "true"
+video: "true"
 ---
 
-<section id="description" class="palette">
-    <div id="description-banner">
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="{{ site.baseurl }}/assets/vids/MP4/Up.mp4" type="video/mp4" />Your browser doesn't support HTML5 video.
+            <source src="{{ site.baseurl }}/assets/vids/WEBM/Up.webm" type="video/webm" />Your browser doesn't support HTML5 video.
+        </video>
 
-        <div class="container horizontal-padding-extra-large container-narrow">
-        <div class="row">
+        <div class="poster hidden">
+            <img src="{{ site.baseurl }}/assets/vids/Snapshots/Up.jpg" alt="Up">
+        </div><!-- /.poster -->
+    </div>
 
-            <h2 class="text-center">{{ site.title }} is coming ...</h2>
+    <div class="title-container">
+        <div class="headline">
+            <h1 class="cover text-shadow-dark">{{ site.title }} is coming</h1>
+            <h2 class="cover text-white">Somethings in the air.  {{ site.title }} is coming and soon you'll be able to quickly find what your looking for ...</h2>
+        </div>
 
-          <div><!-- /.row -->
-        </div><!-- /.container -->
-
-    </div><!-- /#description-banner -->
-</section><!-- /#description -->
+        <div class="text-center" id="loadBannerVideoSpinner" style="padding: 10px; border-radius: 4px; display: none; margin-top: 20px; background-color: rgba(0, 0, 0, 0.498039);">
+            <h5 class="text-thin text-primary">Loading Coverr... <i class="fa fa-circle-o-notch fa-spin"></i></h5>
+        </div>
+    </div><!-- /.title-container -->
+</div>
