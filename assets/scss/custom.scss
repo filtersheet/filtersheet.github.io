@@ -124,7 +124,6 @@ a:visited { color: $coreHyperlink; }
     margin-left: 0px;
 }
 
-
 @include breakpoint($sm_max) {
     .row {
         padding-right: .5em;
@@ -320,3 +319,22 @@ a.brand:hover {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* custom styles
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+h1.cover {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+@include breakpoint($sm_max) {
+    h1.cover {
+        font-family: $sansSerifFont;
+        font-weight: 400;
+        font-size: 2em;
+    }
+}
+
+h2.cover {
+    font-family: $sansSerifFont;
+    padding-top: 2em;
+    font-weight: 100;
+}
