@@ -5,6 +5,7 @@ email: ""
 description: Filtersheet.com exists to ease the process of finding and filtering web candy.
 baseurl: ""
 url: "http://filtersheet.com" # the base hostname & protocol for your site
+google-analytics: UA-77709953-1
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
