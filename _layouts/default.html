@@ -2,8 +2,9 @@
 <html>
 
     {% include structure/head.html %}
+    {% include structure/scripts.html %}
 
-    <body>
+    <body id="filterable">
 
         {% include menu/navigation.html %}
         {% include menu/subnavigation.html %}
@@ -17,7 +18,6 @@
         </div><!-- /.page-content -->
 
         {% include block/footer.html %}
-        {% include structure/scripts.html %}
         {% include structure/analytics.html %}
 
     </body>
