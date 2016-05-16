@@ -1,0 +1,51 @@
+---
+layout: landing
+header: "Real Home Page"
+subheader: "Page"
+searchable: "true"
+---
+
+<section id="intro" class="content-section">
+    <div class="container horizontal-padding-large">
+        <div class="row">
+            <div class="intro-body">
+                <h1 class="brand-heading text-center">Real Home Page</h1>
+                <h2 class="brand-subheading text-center">{{ site.description }}</h2>
+        <div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <div class="container horizontal-padding-top">
+        <div class="row">
+            <input type="search" class="search form-control form-top-pad" placeholder="Type to filter ...">
+        <div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#intro -->
+
+<section>
+    <div class="container horizontal-padding-large">
+        <div class="row">
+        <h5>Filterable Results</h5>
+            <ul class="list">
+                <li>
+                    <h3 class="name">Jonny</h3>
+                    <p class="city">Stockholm</p>
+                </li>
+                <li>
+                    <h3 class="name">Jonas</h3>
+                    <p class="city">Berlin</p>
+                </li>
+            </ul>
+
+        <div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var options = {
+            valueNames: [ 'name', 'city' ]
+        };
+
+        var filterable = new List('filterable', options);
+    });
+</script>
