@@ -340,3 +340,16 @@ h2.cover {
     font-weight: 100;
     color: $darkTone;
 }
+
+.searchbar-inner-addon {
+    position: relative;
+}
+.searchbar-inner-addon input {
+    padding-right: 30px;
+}
+.searchbar-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}

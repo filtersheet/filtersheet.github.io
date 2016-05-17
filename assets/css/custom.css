@@ -138,4 +138,10 @@ h1.cover { font-weight: 400; font-size: 4em; color: #fff; }
 @media screen and (max-width: 991px) { h1.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 2em; } }
 h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding-top: 2em; font-weight: 100; color: #1a181b; }
 
+.searchbar-inner-addon { position: relative; }
+
+.searchbar-inner-addon input { padding-right: 30px; }
+
+.searchbar-inner-addon i { position: absolute; right: 0px; padding: 10px 12px; pointer-events: none; }
+
 /*# sourceMappingURL=custom.css.map */
