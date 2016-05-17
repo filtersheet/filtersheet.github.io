@@ -6,23 +6,30 @@ searchable: "true"
 ---
 
 <section id="intro" class="content-section">
-    <div class="container horizontal-padding-large">
+    <div class="container horizontal-padding-medium">
         <div class="row">
             <div class="intro-body">
-                <h1 class="brand-heading text-center">Real Home Page</h1>
-                <h2 class="brand-subheading text-center">{{ site.description }}</h2>
-        <div><!-- /.row -->
-    </div><!-- /.container -->
-
-    <div class="container horizontal-padding-top">
-        <div class="row">
-            <input type="search" class="search form-control form-top-pad" placeholder="Type to filter ...">
+                <h1 class="text-center">{{ site.title }}</h1>
+                <h3 class="text-center">{{ site.description }}</h3>
         <div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- /#intro -->
 
+<section id="intro" class="search-section">
+    <div class="palette background-light-tone">
+        <div class="container horizontal-padding-medium">
+            <div class="row">
+                <div class="searchbar-inner-addon">
+                    <i class="fa fa-filter"></i>
+                    <input type="search" class="search form-control form-top-pad" placeholder="Type to filter ...">
+                </div>
+            <div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.palette -->
+</section><!-- /#intro -->
+
 <section>
-    <div class="container horizontal-padding-large">
+    <div class="container horizontal-padding-medium">
         <div class="row">
         <h5>Filterable Results</h5>
             <ul class="list">
