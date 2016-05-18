@@ -353,3 +353,20 @@ h2.cover {
     padding: 10px 12px;
     pointer-events: none;
 }
+
+.hero-section {
+    background-image: url("/assets/img/hero.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: darken( #d15d50, 22% );
+}
+
+.intro-body h1 {
+  font-size: 3em;
+}
+
+.intro-body h3 {
+  font-weight: 100;
+  font-family: $sansSerifFont;
+  font-size: 2em;
+}

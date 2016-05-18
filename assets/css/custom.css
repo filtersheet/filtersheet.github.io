@@ -144,4 +144,10 @@ h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding
 
 .searchbar-inner-addon i { position: absolute; right: 0px; padding: 10px 12px; pointer-events: none; }
 
+.hero-section { background-image: url("/assets/img/hero.png"); background-repeat: no-repeat; background-position: right top; background-color: #8c2f25; }
+
+.intro-body h1 { font-size: 3em; }
+
+.intro-body h3 { font-weight: 100; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-size: 2em; }
+
 /*# sourceMappingURL=custom.css.map */
