@@ -37,6 +37,7 @@ $offWhite: #fdfdfd;
 $lightTone: #2cda9d;
 $brightTone: #feef9a;
 $darkTone: #1a181b;
+$deepTone: #d15d50;
 $grayBase: #2aa19b;
 $borderColor: #eef1f2;
 
@@ -356,9 +357,9 @@ h2.cover {
 
 .hero-section {
     background-image: url("/assets/img/hero.png");
+    background-color: darken( $deepTone, 18% );
     background-repeat: no-repeat;
-    background-position: right top;
-    background-color: darken( #d15d50, 22% );
+    background-attachment: fixed;
 }
 
 .intro-body h1 {
