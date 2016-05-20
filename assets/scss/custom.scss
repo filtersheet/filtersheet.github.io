@@ -88,7 +88,7 @@ body {
 }
 
 body.fixed-top-navigation {
-    /*margin-top: 50px;*/
+  padding-top: 60px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,6 +135,24 @@ a:visited { color: $coreHyperlink; }
 .navbar {
   font-family: $sansSerifFont;
   margin-bottom: 0px;
+}
+
+.navbar-default {
+    /*height: 80px;*/
+    border-color: transparent;
+    background: transparent;
+    /*padding-top: 18px;*/
+    border-bottom: 3px solid transparent;
+    transition: background 0.75s ease;
+    -webkit-transition: background 0.75s ease;
+    -moz-transition: background 0.75s ease;
+}
+
+.navbar-background {
+    background-color: #fff;
+    transition: background 0.75s ease;
+    -webkit-transition: background 0.75s ease;
+    -moz-transition: background 0.75s ease;
 }
 
 .navbar-subnavbar {
@@ -253,6 +271,11 @@ a.brand:hover {
   padding-top: 12em;
 }
 
+.background-transparent {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .background-bright {
   background-color: lighten( $brightTone, 9% );
   color: $darkTone;
@@ -344,6 +367,8 @@ h2.cover {
 
 .searchbar-inner-addon {
     position: relative;
+    width: 80%;
+    float: right;
 }
 .searchbar-inner-addon input {
     padding-right: 30px;
@@ -351,11 +376,12 @@ h2.cover {
 .searchbar-inner-addon i {
     position: absolute;
     right: 0px;
-    padding: 10px 12px;
+    padding: 14px 12px;
     pointer-events: none;
 }
 
 .hero-section {
+    padding-top: 3em;
     background-image: url("/assets/img/hero.png");
     background-color: darken( $deepTone, 18% );
     background-attachment: fixed;

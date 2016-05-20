@@ -39,7 +39,7 @@ sass assets/scss/custom.scss:assets/css/custom.css --style compact
 
 html, body { height: 100%; }
 
-body.fixed-top-navigation { /*margin-top: 50px;*/ }
+body.fixed-top-navigation { padding-top: 60px; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 600; font-family: "Arvo", Times, serif; }
 
@@ -60,6 +60,8 @@ a:visited { color: #23a09b; }
 
 @media screen and (max-width: 991px) { .row { padding-right: .5em; padding-left: .5em; } }
 .navbar { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; margin-bottom: 0px; }
+
+.navbar-default { /*height: 80px;*/ border-color: transparent; background: transparent; /*padding-top: 18px;*/ border-bottom: 3px solid transparent; transition: background 0.75s ease; -webkit-transition: background 0.75s ease; -moz-transition: background 0.75s ease; }
 
 .navbar-subnavbar { height: 100px; padding-top: 48px; border-color: transparent; border-radius: 0px; }
 
@@ -104,6 +106,8 @@ a.brand:hover { color: #23a09b; text-decoration: none; }
 
 .horizontal-padding-top-large { padding-top: 12em; }
 
+.background-transparent { background-color: transparent; border-color: transparent; }
+
 .background-bright { background-color: #fef6c7; color: #1a181b; }
 
 .background-light { background-color: #b7f2dd; color: #1a181b; }
@@ -138,13 +142,13 @@ h1.cover { font-weight: 400; font-size: 4em; color: #fff; }
 @media screen and (max-width: 991px) { h1.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-weight: 400; font-size: 2em; } }
 h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding-top: 2em; font-weight: 100; color: #1a181b; }
 
-.searchbar-inner-addon { position: relative; }
+.searchbar-inner-addon { position: relative; width: 80%; float: right; }
 
 .searchbar-inner-addon input { padding-right: 30px; }
 
-.searchbar-inner-addon i { position: absolute; right: 0px; padding: 10px 12px; pointer-events: none; }
+.searchbar-inner-addon i { position: absolute; right: 0px; padding: 14px 12px; pointer-events: none; }
 
-.hero-section { background-image: url("/assets/img/hero.png"); background-color: #9c3529; background-attachment: fixed; }
+.hero-section { padding-top: 3em; background-image: url("/assets/img/hero.png"); background-color: #9c3529; background-attachment: fixed; }
 
 .intro-body h1 { font-size: 3em; }
 
