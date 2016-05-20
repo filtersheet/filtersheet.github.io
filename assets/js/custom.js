@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         var offset = window.pageYOffset;
-        var position = 50;
+        var position = 10;
 
         if(offset > position) {
             $('#navbar-transition').addClass("navbar-background");
