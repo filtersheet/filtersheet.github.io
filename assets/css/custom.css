@@ -61,9 +61,9 @@ a:visited { color: #23a09b; }
 @media screen and (max-width: 991px) { .row { padding-right: .5em; padding-left: .5em; } }
 .navbar { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; margin-bottom: 0px; }
 
-.navbar-default { /*height: 80px;*/ border-color: transparent; background: transparent; /*padding-top: 18px;*/ border-bottom: 3px solid transparent; transition: background 0.25s ease; -webkit-transition: background 0.25s ease; -moz-transition: background 0.25s ease; }
+.navbar-default { border-color: transparent; background: transparent; border-bottom: 1px solid transparent; transition: background 0.25s ease; -webkit-transition: background 0.25s ease; -moz-transition: background 0.25s ease; }
 
-.navbar-background { background-color: #fff; transition: background 0.25s ease; -webkit-transition: background 0.25s ease; -moz-transition: background 0.25s ease; }
+.navbar-background { background-color: #fff; transition: background 0.25s ease; -webkit-transition: background 0.25s ease; -moz-transition: background 0.25s ease; border-bottom: 1px solid #2aa19b; }
 
 .navbar-subnavbar { height: 100px; padding-top: 48px; border-color: transparent; border-radius: 0px; }
 
@@ -157,5 +157,7 @@ h2.cover { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; padding
 .intro-body h1 { font-size: 3em; }
 
 .intro-body h3 { font-weight: 100; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-size: 2em; }
+
+.footer-copyright { font-size: 1.4em; font-weight: 100; }
 
 /*# sourceMappingURL=custom.css.map */
