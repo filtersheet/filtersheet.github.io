@@ -1,4 +1,17 @@
 
 $(document).ready(function(){
-    // cool code is coming
+
+    $(window).on('scroll', function() {
+        var offset = window.pageYOffset;
+        var position = 50;
+
+        if(offset > position) {
+            $('#navbar-transition').addClass("navbar-background");
+        } else if (offset == 0) {
+            $('#navbar-transition').removeClass("navbar-background");
+        } else {
+            $('#navbar-transition').removeClass("navbar-background");
+        }
+    });
+
 });
