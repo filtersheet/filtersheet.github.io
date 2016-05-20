@@ -143,16 +143,16 @@ a:visited { color: $coreHyperlink; }
     background: transparent;
     /*padding-top: 18px;*/
     border-bottom: 3px solid transparent;
-    transition: background 0.75s ease;
-    -webkit-transition: background 0.75s ease;
-    -moz-transition: background 0.75s ease;
+    transition: background 0.25s ease;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
 }
 
 .navbar-background {
     background-color: #fff;
-    transition: background 0.75s ease;
-    -webkit-transition: background 0.75s ease;
-    -moz-transition: background 0.75s ease;
+    transition: background 0.25s ease;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
 }
 
 .navbar-subnavbar {
@@ -191,8 +191,13 @@ a.brand {
   margin-top: 5px;
   font-weight: 400;
   color: #fff;
+  text-shadow: 1px 1px 1px $darkTone;
   font-size: 18px;
+}
+
+.navbar-background a.brand {
   color: $darkTone;
+  text-shadow: none;
 }
 
 a.brand:hover {
