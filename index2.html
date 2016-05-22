@@ -20,13 +20,16 @@ subnavigation: "false"
 <section>
     <div class="container-narrow horizontal-padding-medium">
         <div class="row">
+            <div class="list">
 
             {% for sheet in site.data.sheets %}
-            <div class="sheet">
-            <a href="{{ sheet.url }}" class="sheet sheets-row">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></a>
-            </div><!-- /.sheet -->
+            <div class="sheet-row">
+                <h5 class="sheet-title"><a href="{{ sheet.url }}">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></a></h5><!-- /.sheet -->
+                <p class='sheet-description'>{{ sheet.description }}</p>
+            </div><!-- /.sheets -->
             {% endfor %}
 
+            </div><!-- /.list -->
         <div><!-- /.row -->
     </div><!-- /.container -->
 </section>
@@ -34,7 +37,7 @@ subnavigation: "false"
 <script type="text/javascript">
     $(document).ready(function(){
         var options = {
-            valueNames: [ 'name', 'city' ]
+            valueNames: [ 'sheet-title', 'sheet-description' ]
         };
 
         var filterable = new List('filterable', options);
