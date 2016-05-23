@@ -24,8 +24,13 @@ subnavigation: "false"
 
             {% for sheet in site.data.sheets %}
             <div class="sheet-row">
-                <h5 class="sheet-title"><a href="{{ sheet.url }}">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></a></h5><!-- /.sheet -->
-                <p class='sheet-description'>{{ sheet.description }}</p>
+                <div class="sheet-icon">
+                    <img src="/assets/img/logo/{{ sheet.logo }}" class="img-responsive" />
+                </div>
+                <div class="sheet-detail">
+                    <h4 class="sheet-title"><a href="{{ sheet.url }}">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></a></h4><!-- /.sheet -->
+                    <p class='sheet-description'>{{ sheet.description }}</p>
+                </div>
             </div><!-- /.sheets -->
             {% endfor %}
 

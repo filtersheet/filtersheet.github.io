@@ -408,3 +408,24 @@ h2.cover {
   font-size: 1.4em;
   font-weight: 100;
 }
+
+.sheet-row {
+    border: 1px solid lighten( $grayBase, 15% );
+    padding: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    width: 100%;
+}
+
+.sheet-icon {
+    float: left;
+    width: 20%;
+    padding: .2em;
+}
+
+.sheet-detail {
+    float: left;
+    text-align: left;
+    width: 80%;
+    padding: 1em;
+}
