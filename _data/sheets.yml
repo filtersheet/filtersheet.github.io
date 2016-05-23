@@ -3,13 +3,16 @@
   title: "FontAwesome"
   description: "The iconic font and CSS toolkit"
   meta: "fonts"
+  logo: "fontawesome.png"
 
 - url: netflix
   title: "NetFlix"
   description: "Watch TV Shows Online, Watch Movies Online"
   meta: "movies"
+  logo: "netflix.png"
 
 - url: apis
   title: "API's"
   description: "Application program interface (API) is a set of routines, protocols, and tools for building software applications."
   meta: "programming"
+  logo: "api.png"
