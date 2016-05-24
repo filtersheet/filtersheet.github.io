@@ -415,6 +415,9 @@ h2.cover {
     margin-bottom: 1em;
     display: inline-block;
     width: 100%;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
 }
 
 .sheet-icon {
