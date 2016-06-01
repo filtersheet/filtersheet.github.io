@@ -23,15 +23,17 @@ subnavigation: "false"
             <div class="list">
 
             {% for sheet in site.data.sheets %}
+                <a href="{{ sheet.url }}" class="link-div">
             <div class="sheet-row">
-                <div class="sheet-icon">
-                    <img src="/assets/img/logo/{{ sheet.logo }}" class="img-responsive" />
-                </div>
-                <div class="sheet-detail">
-                    <h4 class="sheet-title"><a href="{{ sheet.url }}">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></a></h4><!-- /.sheet -->
-                    <p class='sheet-description'>{{ sheet.description }}</p>
-                </div>
+                    <div class="sheet-icon">
+                        <img src="/assets/img/logo/{{ sheet.logo }}" class="img-responsive" />
+                    </div>
+                    <div class="sheet-detail">
+                        <h4 class="sheet-title">{{ sheet.title }}<span class="hidden"> ({{ sheet.meta }})</span></h4><!-- /.sheet -->
+                        <p class='sheet-description'>{{ sheet.description }}</p>
+                    </div>
             </div><!-- /.sheets -->
+                </a>
             {% endfor %}
 
             </div><!-- /.list -->
