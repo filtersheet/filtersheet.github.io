@@ -16,3 +16,9 @@
   description: "Application program interface (API) is a set of routines, protocols, and tools for building software applications."
   meta: "programming"
   logo: "api.png"
+
+- url: middleware
+  title: "Middleware"
+  description: "Middleware is computer software that connects software components or applications."
+  meta: "programming frameworks"
+  logo: "middleware.png"
