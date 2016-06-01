@@ -205,6 +205,22 @@ a.brand:hover {
   text-decoration: none;
 }
 
+a.link-div {
+  border: 1px solid lighten( $grayBase, 15% );
+  display: block;
+  margin-bottom: 1em;
+}
+
+a.link-div:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  color: darken( $coreHyperlink, 10% );
+  background-color: lighten( $grayBase, 52% );
+}
+
 .form-control::-webkit-input-placeholder {
   /*color: darken( $subtleGray, 10% );*/
   font-weight: 100;
@@ -405,19 +421,14 @@ h2.cover {
 }
 
 .footer-copyright {
-  font-size: 1.4em;
+  font-size: 1.25em;
   font-weight: 100;
 }
 
 .sheet-row {
-    border: 1px solid lighten( $grayBase, 15% );
     padding: 1em;
-    margin-bottom: 1em;
     display: inline-block;
     width: 100%;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
 }
 
 .sheet-icon {
