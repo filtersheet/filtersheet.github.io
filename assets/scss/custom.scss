@@ -91,6 +91,14 @@ body.fixed-top-navigation {
   padding-top: 60px;
 }
 
+body#background-cover {
+    background-image: url("/assets/img/404.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: $serifFont;
@@ -102,6 +110,10 @@ p {
 a { color: $coreHyperlink; }
 a:hover { color: $coreHyperlink; }
 a:visited { color: $coreHyperlink; }
+
+a.link-dark { color: darken( $coreHyperlink, 33% ); }
+a.link-dark:hover { color: lighten( $coreHyperlink, 33% ); }
+a.link-dark:visited { color: darken( $coreHyperlink, 33% ); }
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
