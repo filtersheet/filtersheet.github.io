@@ -2,16 +2,17 @@
 layout: default
 header: "FontAwesome Filter"
 subheader: "Subheader"
-searchable: "true"
 subnavigation: "true"
+menu: "fontawesome"
+searchable: "true"
 ---
 
-<section id="intro" class="background-dark-tone">
+<section id="intro" class="">
     <div class="container horizontal-padding-medium">
         <div class="row">
             <div class="intro-body">
-                <h1 class="text-white text-center text-shadow-dark">{{ page.header }}</h1>
-                <h3 class="text-white text-center text-shadow-dark">{{ page.subheader }}</h3>
+                <h1 class="text-center text-shadow-dark">{{ page.header }}</h1>
+                <h3 class="text-center text-shadow-dark">{{ page.subheader }}</h3>
             </div>
         <div><!-- /.row -->
     </div><!-- /.container -->
@@ -22,7 +23,17 @@ subnavigation: "true"
         <div class="row">
             <div class="list">
 
-            <h5>Items go here.</h5>
+            <div class="sheet-detail">
+                <h4 class="sheet-title">500px<span class="hidden">photos photography sharing social images</span></h4>
+            </div>
+
+            <div class="sheet-detail">
+                <h4 class="sheet-title">Amazon<span class="hidden">shopping internet jungles females warriors rivers</span></h4>
+            </div>
+
+            <div class="sheet-detail">
+                <h4 class="sheet-title">Android<span class="hidden">operating system os phone google</span></h4>
+            </div>
 
             </div><!-- /.list -->
         <div><!-- /.row -->
@@ -32,7 +43,7 @@ subnavigation: "true"
 <script type="text/javascript">
     $(document).ready(function(){
         var options = {
-            valueNames: [ 'sheet-title', 'sheet-description' ]
+            valueNames: [ 'sheet-title' ]
         };
 
         var filterable = new List('filterable', options);
