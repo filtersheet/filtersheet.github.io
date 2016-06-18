@@ -9,7 +9,7 @@
         {% include menu/navigation.html %}
 
         {% if page.subnavigation == 'true' %}
-            {% include menu/subnavigation.html %}
+            {% include menu/{{ page.menu }}-subnav.html %}
         {% endif %}
 
         <div class="page-content">
