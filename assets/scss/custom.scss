@@ -1,6 +1,5 @@
 /*
 sass assets/scss/custom.scss:assets/css/custom.min.css --style compressed
-sass assets/scss/custom.scss:assets/css/custom.css --style compact
 */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -38,8 +37,11 @@ $lightTone: #2cda9d;
 $brightTone: #feef9a;
 $darkTone: #1a181b;
 $deepTone: #d15d50;
+$shallowTone: #daa41e;
 $grayBase: #2aa19b;
 $borderColor: #eef1f2;
+
+$filtersheetCoreColor: #1b6cf1;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Responsive breakpoints
@@ -156,6 +158,10 @@ a.link-dark:visited { color: darken( $coreHyperlink, 33% ); }
     transition: background 0.25s ease;
     -webkit-transition: background 0.25s ease;
     -moz-transition: background 0.25s ease;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: $darkTone;
 }
 
 .navbar-background {
@@ -337,6 +343,10 @@ a.link-div:hover {
   color: $darkTone;
 }
 
+.background-filtersheet-core {
+  background-color: $filtersheetCoreColor;
+}
+
 .angled-top-down-left {
   -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
@@ -418,7 +428,7 @@ h2.cover {
 .hero-section {
     padding-top: 3em;
     background-image: url("/assets/img/hero.png");
-    background-color: darken( $deepTone, 18% );
+    background-color: $shallowTone;
     background-attachment: fixed;
 }
 
