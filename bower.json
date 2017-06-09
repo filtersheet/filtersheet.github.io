@@ -1,24 +1,25 @@
 {
-  "name": "filtersheet.github.io",
-  "version": "0.1.0",
-  "homepage": "https://github.com/filtersheet/filtersheet.github.io",
-  "authors": [
-    "Derek Nutile <dereknutile@gmail.com>"
-  ],
-  "description": "Easily find and filter stuff.",
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "list.js": "~1.2.0",
-    "fontawesome": "~4.6.0",
-    "jquery": "~2.2.3",
-    "bootstrap": "~3.3.6"
-  }
+    "name": "filtersheet.github.io",
+    "version": "0.1.1",
+    "homepage": "https://github.com/filtersheet/filtersheet.github.io",
+    "authors": [
+        "Derek Nutile <dereknutile@gmail.com>"
+    ],
+    "description": "Easily find and filter stuff.",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "animate.css": "^3.5.2",
+        "list.js": "^1.5.0",
+        "fontawesome": "^4.7.0",
+        "jquery": "^2.2.4",
+        "bootstrap": "^3.3.7"
+    }
 }
