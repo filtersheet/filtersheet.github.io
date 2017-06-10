@@ -1,9 +1,9 @@
 ---
 layout: default
 header: "FontAwesome Icon Filter"
-subnavigation: "true"
 menu: "fontawesome"
 searchable: "true"
+data: fontawesome
 ---
 
 <section id="intro" class="background-filtersheet-core">
@@ -21,17 +21,25 @@ searchable: "true"
         <div class="row">
             <div class="list">
 
-            <div class="sheet-detail">
-                <h4 class="sheet-title">500px<span class="hidden">photos photography sharing social images</span></h4>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Version</th>
+                        <th>Categories</th>
+                      </tr>
+                </thead>
 
-            <div class="sheet-detail">
-                <h4 class="sheet-title">Amazon<span class="hidden">shopping internet jungles females warriors rivers</span></h4>
-            </div>
-
-            <div class="sheet-detail">
-                <h4 class="sheet-title">Android<span class="hidden">operating system os phone google</span></h4>
-            </div>
+                {% for icon in site.data.fontawesome.icons %}
+                <tr>
+                    <td>{{ icon.name }}</td>
+                    <td>{{ icon.unicode }}</td>
+                    <td>{{ icon.created }}</td>
+                    <td>{{ icon.categories }}</td>
+                </tr>
+                {% endfor %}
+            </table>
 
             </div><!-- /.list -->
         <div><!-- /.row -->
@@ -39,11 +47,11 @@ searchable: "true"
 </section>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        var options = {
-            valueNames: [ 'sheet-title' ]
-        };
-
-        var filterable = new List('filterable', options);
-    });
+    // $(document).ready(function(){
+    //     var options = {
+    //         valueNames: [ 'sheet-title' ]
+    //     };
+    //
+    //     var filterable = new List('filterable', options);
+    // });
 </script>
