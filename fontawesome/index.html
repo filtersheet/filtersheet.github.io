@@ -19,39 +19,44 @@ data: fontawesome
 <section>
     <div class="container-narrow horizontal-padding-medium">
         <div class="row">
-            <div class="list">
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Code</th>
-                        <th>Version</th>
-                        <th>Categories</th>
-                      </tr>
-                </thead>
-
-                {% for icon in site.data.fontawesome.icons %}
-                <tr>
-                    <td>{{ icon.name }}</td>
-                    <td>{{ icon.unicode }}</td>
-                    <td>{{ icon.created }}</td>
-                    <td>{{ icon.categories }}</td>
-                </tr>
-                {% endfor %}
-            </table>
-
-            </div><!-- /.list -->
+            <div id="filterList">
+                <div class="list">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Code</th>
+                                <th>Version</th>
+                                <th>Categories</th>
+                              </tr>
+                        </thead>
+                        {% for icon in site.data.fontawesome.icons %}
+                        <tr>
+                            <td class="name">{{ icon.name }}</td>
+                            <td class="unicode">{{ icon.unicode }}</td>
+                            <td class="created">{{ icon.created }}</td>
+                            <td class="categories">{{ icon.categories }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div><!-- /.list -->
+            </div><!-- /#filterList -->
         <div><!-- /.row -->
     </div><!-- /.container -->
 </section>
 
 <script type="text/javascript">
-    // $(document).ready(function(){
-    //     var options = {
-    //         valueNames: [ 'sheet-title' ]
-    //     };
-    //
-    //     var filterable = new List('filterable', options);
-    // });
+    $(document).ready(function(){
+        var options = {
+            valueNames: [ 'name', 'unicode', 'created', 'categories' ]
+        };
+
+        var itemListObj = new List('filterList', options);
+
+        $('#filterText').on('keyup', function() {
+            var searchString = $(this).val();
+            console.log(searchString);
+            itemListObj.search(searchString);
+        });
+    });
 </script>
