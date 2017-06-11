@@ -19,17 +19,17 @@ data: fontawesome
 <section>
     <div class="container-narrow horizontal-padding-medium">
         <div class="row">
-            <div id="filterList">
-                <div class="list">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Code</th>
-                                <th>Version</th>
-                                <th>Categories</th>
-                              </tr>
-                        </thead>
+            <div id="listToFilter">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Version</th>
+                            <th>Categories</th>
+                          </tr>
+                    </thead>
+                    <tbody class="list">
                         {% for icon in site.data.fontawesome.icons %}
                         <tr>
                             <td class="name">{{ icon.name }}</td>
@@ -38,8 +38,8 @@ data: fontawesome
                             <td class="categories">{{ icon.categories }}</td>
                         </tr>
                         {% endfor %}
-                    </table>
-                </div><!-- /.list -->
+                    </tbody>
+                </table>
             </div><!-- /#filterList -->
         <div><!-- /.row -->
     </div><!-- /.container -->
@@ -48,15 +48,14 @@ data: fontawesome
 <script type="text/javascript">
     $(document).ready(function(){
         var options = {
-            valueNames: [ 'name', 'unicode', 'created', 'categories' ]
+            valueNames: [ 'name' ]
         };
 
-        var itemListObj = new List('filterList', options);
+        var userList = new List('listToFilter', options);
 
         $('#filterText').on('keyup', function() {
             var searchString = $(this).val();
-            console.log(searchString);
-            itemListObj.search(searchString);
+            userList.search(searchString);
         });
     });
 </script>
