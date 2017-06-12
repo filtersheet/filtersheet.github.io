@@ -1,0 +1,2129 @@
+---
+-
+    name:  IUCN
+    description:  IUCN Red List of Threatened Species
+    categories: Animals
+    type:  token
+    ssl:  No
+    url:  http://apiv3.iucnredlist.org/api/v3/docs
+-
+    name:  Petfinder
+    description:  Adoption
+    categories: Animals
+    type:  Yes
+    ssl:  Yes
+    url:  https://www.petfinder.com/developers/api-docs/
+-
+    name:  RescueGroups
+    description:  Adoption
+    categories: Animals
+    type:  No
+    ssl:  Yes
+    url:  https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home
+-
+    name:  AniList
+    description:  AniList Anime
+    categories: Anime
+    type:  OAuth
+    ssl:  No
+    url:  http://anilist-api.readthedocs.io/en/latest/
+-
+    name:  Kitsu
+    description:  Anime discovery platform
+    categories: Anime
+    type:  OAuth
+    ssl:  Yes
+    url:  http://docs.kitsu.apiary.io/
+-
+    name:  Studio Ghibli
+    description:  Resources from Studio Ghibli films
+    categories: Anime
+    type:  No
+    ssl:  Yes
+    url:  https://ghibliapi.herokuapp.com
+-
+    name:  Certly
+    description:  Certly Link/Domain Flagging
+    categories: Anti-Malware
+    type:  token
+    ssl:  Yes
+    url:  https://guard.certly.io/
+-
+    name:  Google Safe Browsing
+    description:  Google Link/Domain Flagging
+    categories: Anti-Malware
+    type:  token
+    ssl:  Yes
+    url:  https://developers.google.com/safe-browsing/
+-
+    name:  Metacert
+    description:  Metacert Link Flagging
+    categories: Anti-Malware
+    type:  token
+    ssl:  Yes
+    url:  https://metacert.com/
+-
+    name:  VirusTotal
+    description:  VirusTotal File/URL Analysis
+    categories: Anti-Malware
+    type:  token
+    ssl:  Yes
+    url:  https://www.virustotal.com/en/documentation/public-api/
+-
+    name:  Web Of Trust WOT
+    description:  Website reputation
+    categories: Anti-Malware
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.mywot.com/wiki/API
+-
+    name:  Dribbble
+    description:  Design
+    categories: Art & Design
+    type:  OAuth
+    ssl:  No
+    url:  http://developer.dribbble.com/v1/
+-
+    name:  Noun Project
+    description:  Icons
+    categories: Art & Design
+    type:  OAuth
+    ssl:  No
+    url:  http://api.thenounproject.com/index.html
+-
+    name:  Icons8
+    description:  Icons
+    categories: Art & Design
+    type:  OAuth
+    ssl:  Yes
+    url:  http://docs.icons8.apiary.io/#reference/0/meta
+-
+    name:  Rijksmuseum
+    description:  Art
+    categories: Art & Design
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.rijksmuseum.nl/en/api
+-
+    name:  British National Bibliography
+    description:  Books
+    categories: Books
+    type:  No
+    ssl:  No
+    url:  http://bnb.data.bl.uk/
+-
+    name:  Goodreads
+    description:  Books
+    categories: Books
+    type:  No
+    ssl:  Yes
+    url:  https://www.goodreads.com/api
+-
+    name:  Google Books
+    description:  Books
+    categories: Books
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.google.com/books/
+-
+    name:  mailgun
+    description:  Email Service
+    categories: Business
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.mailgun.com/
+-
+    name:  markerapi
+    description:  Trademark Search
+    categories: Business
+    type:  No
+    ssl:  No
+    url:  http://www.markerapi.com/
+-
+    name:  Church Calendar
+    description:  Catholic liturgical calendar
+    categories: Calendar
+    type:  No
+    ssl:  No
+    url:  http://calapi.inadiutorium.cz/
+-
+    name:  Holidays
+    description:  Historical data regarding holidays
+    categories: Calendar
+    type:  apiKey
+    ssl:  Yes
+    url:  https://holidayapi.com/
+-
+    name:  LectServe
+    description:  Protestant liturgical calendar
+    categories: Calendar
+    type:  No
+    ssl:  No
+    url:  http://www.lectserve.com
+-
+    name:  Non-Working Days
+    description:  Database of ICS files for non working days
+    categories: Calendar
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/gadael/icsdb
+-
+    name:  Box
+    description:  File Sharing and Storage
+    categories: Cloud Storage & File Sharing
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.box.com/
+-
+    name:  Dropbox
+    description:  File Sharing and Storage
+    categories: Cloud Storage & File Sharing
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.dropbox.com/developers
+-
+    name:  Google Drive
+    description:  File Sharing and Storage
+    categories: Cloud Storage & File Sharing
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.google.com/drive/
+-
+    name:  OneDrive
+    description:  File Sharing and Storage
+    categories: Cloud Storage & File Sharing
+    type:  OAuth
+    ssl:  Yes
+    url:  https://dev.onedrive.com/
+-
+    name:  Currencylayer
+    description:  Exchange rates and currency conversion
+    categories: Currency Exchange
+    type:  apiKey
+    ssl:  Yes
+    url:  https://currencylayer.com/documentation
+-
+    name:  Fixer.io
+    description:  Exchange rates and currency conversion
+    categories: Currency Exchange
+    type:  No
+    ssl:  Yes
+    url:  http://fixer.io
+-
+    name:  18F
+    description:  US Federal Government /Developer Program
+    categories: Data Access
+    type:  No
+    ssl:  No
+    url:  http://18f.github.io/API-All-the-X/
+-
+    name:  Abbreviation
+    description:  Get abbreviations and meanings
+    categories: Data Access
+    type:  X-Mashape-Key
+    ssl:  Yes
+    url:  https://market.mashape.com/daxeel/abbreviations
+-
+    name:  CARTO
+    description:  Location Information Prediction
+    categories: Data Access
+    type:  apiKey
+    ssl:  Yes
+    url:  https://carto.com/
+-
+    name:  Callook.info
+    description:  United States ham radio callsigns
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://callook.info
+-
+    name:  Celebinfo
+    description:  Celebrity information
+    categories: Data Access
+    type:  X-Mashape-Key
+    ssl:  Yes
+    url:  https://market.mashape.com/daxeel/celebinfo/
+-
+    name:  Colorado Data Engine
+    description:  Formatted and geolocated Colorado public data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  http://codataengine.org/
+-
+    name:  Colorado Information Marketplace
+    description:  Colorado State Government Open Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://data.colorado.gov/
+-
+    name:  Data USA
+    description:  US Public Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://datausa.io/about/api/
+-
+    name:  Dronestream
+    description:  Tracks United States drone strikes
+    categories: Data Access
+    type:  No
+    ssl:  No
+    url:  http://dronestre.am/
+-
+    name:  fonoApi
+    description:  Mobile Device Description
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://fonoapi.freshpixl.com/
+-
+    name:  Open Government - Australia
+    description:  Australian Government Open Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://www.data.gov.au/
+-
+    name:  Open Government - USA
+    description:  United States Government Open Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://www.data.gov/
+-
+    name:  Open Government - Canada
+    description:  Canadian Government Open Data
+    categories: Data Access
+    type:  No
+    ssl:  No
+    url:  http://open.canada.ca/en
+-
+    name:  Open Government - India
+    description:  Indian Government Open Data
+    categories: Data Access
+    type: token
+    ssl:  Yes
+    url:  https://data.gov.in/
+-
+    name:  Pearson
+    description:  Dictionary Data
+    categories: Data Access
+    type:  apiKey
+    ssl:  No
+    url:  http://developer.pearson.com/apis/dictionaries
+-
+    name:  Prague Opendata
+    description:  Prague City Open Data
+    categories: Data Access
+    type:  No
+    ssl:  No
+    url:  http://opendata.praha.eu/en
+-
+    name:  Quandl
+    description:  Stock Market Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://www.quandl.com/
+-
+    name:  Represent by Open North
+    description:  Find Canadian Government Representatives
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://represent.opennorth.ca/
+-
+    name:  Scoop.it
+    description:  Content Curation Service
+    categories: Data Access
+    type:  apiKey
+    ssl:  No
+    url:  http://www.scoop.it/dev
+-
+    name:  Teleport
+    description:  Quality of Life Data
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://developers.teleport.org/
+-
+    name:  Wikipedia
+    description:  Mediawiki Encyclopedia
+    categories: Data Access
+    type:  No
+    ssl:  Yes
+    url:  https://www.mediawiki.org/wiki/API:Main_page
+-
+    name:  Wordnik
+    description:  Dictionary Data
+    categories: Data Access
+    type:  No
+    ssl:  No
+    url:  http://developer.wordnik.com
+-
+    name:  Yelp
+    description:  Find Local Business
+    categories: Data Access
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.yelp.com/developers
+-
+    name:  languagelayer
+    description:  Language detection
+    categories: Data Validation
+    type:  No
+    ssl:  Yes
+    url:  https://languagelayer.com
+-
+    name:  Lob.com
+    description:  US Address Verification
+    categories: Data Validation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://lob.com/
+-
+    name:  mailboxlayer
+    description:  Email address validation
+    categories: Data Validation
+    type:  No
+    ssl:  Yes
+    url:  https://mailboxlayer.com
+-
+    name:  numverify
+    description:  Phone number validation
+    categories: Data Validation
+    type:  No
+    ssl:  Yes
+    url:  https://numverify.com
+-
+    name:  vatlayer
+    description:  VAT number validation
+    categories: Data Validation
+    type:  No
+    ssl:  Yes
+    url:  https://vatlayer.com
+-
+    name:  Adorable Avatars
+    description:  Generate random cartoon avatars
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  http://avatars.adorable.io
+-
+    name:  APIs.guru
+    description:  Wikipedia for Web APIs
+    categories: Development
+    type: No
+    ssl: Yes
+    url: https://apis.guru/api-doc/
+-
+    name:  CDNJS
+    description:  Library info on CDNJS
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://api.cdnjs.com/libraries/jquery
+-
+    name:  Faceplusplus
+    description:  A tool to detect face
+    categories: Development
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.faceplusplus.com/
+-
+    name:  Genderize.io
+    description:  Determines a gender from a first name
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://genderize.io
+-
+    name:  Github - User Data
+    description: ' Pull public information for a user''s github '
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://api.github.com/users/hackeryou
+-
+    name:  Gitter
+    description:  Chat for GitHub
+    categories: Development
+    type:  OAuth
+    ssl:  Yes
+    url:  https://github.com/gitterHQ/docs
+-
+    name:  HackerRank
+    description:  Compile source code and run against a set of provided test cases
+    categories: Development
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.hackerrank.com/api/docs
+-
+    name:  Hipster Ipsum
+    description:  Generates Hipster Ipsum text
+    categories: Development
+    type:  No
+    ssl:  No
+    url:  http://hipsterjesus.com/
+-
+    name:  IPify
+    description:  A simple IP Address API
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://www.ipify.org/
+-
+    name:  JSON 2 JSONP
+    description:  Convert JSON to JSONP on-the-fly for easy cross-domain data requests using client-side JavaScript
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://json2jsonp.com/
+-
+    name:  JSONPlaceholder
+    description:  Fake data for testing and prototyping
+    categories: Development
+    type:  No
+    ssl:  No
+    url:  http://jsonplaceholder.typicode.com/
+-
+    name:  Judge0 API
+    description:  Compile and run source code
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://api.judge0.com/
+-
+    name: ' Let''s Validate '
+    description:  Uncovers the technologies used on websites and URL to thumbnail
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/letsvalidate/api
+-
+    name:  LiveEdu
+    description:  Live Coding Streaming
+    categories: Development
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.liveedu.tv/developer/applications/
+-
+    name:  Lorem Text
+    description:  Generates Lorem Ipsum text
+    categories: Development
+    type:  X-Mashape-Key
+    ssl:  Yes
+    url:  https://market.mashape.com/montanaflynn/lorem-text-generator
+-
+    name:  Loripsum
+    description: ' The "lorem ipsum" generator that doesn''t suck '
+    categories: Development
+    type:  No
+    ssl:  No
+    url:  http://loripsum.net/
+-
+    name:  Myjson
+    description:  A simple JSON store for your web or mobile app
+    categories: Development
+    type:  No
+    ssl:  No
+    url:  http://myjson.com/api
+-
+    name:  Plino
+    description:  Spam filtering system
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://plino.herokuapp.com/
+-
+    name:  Random Word
+    description:  Generate random word
+    categories: Development
+    type:  No
+    ssl:  No
+    url:  http://www.setgetgo.com/randomword/
+-
+    name:  RandomUser
+    description:  Generates random user data
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://randomuser.me
+-
+    name:  ReqRes
+    description:  A hosted REST-API ready to respond to your AJAX requests
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://reqres.in/
+-
+    name:  RoboHash
+    description:  Generate random robot/alien avatars
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://robohash.org/
+-
+    name:  StackExchange
+    description:  Q&A forum for developers
+    categories: Development
+    type:  OAuth
+    ssl:  Yes
+    url:  https://api.stackexchange.com/
+-
+    name:  Stormpath
+    description:  User Authentication
+    categories: Development
+    type:  apiKey
+    ssl:  Yes
+    url:  https://stormpath.com/
+-
+    name:  UI Names
+    description:  Generate random fake names
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/thm/uinames
+-
+    name:  Verse
+    description: ' Check what''s the latest version of your favorite open-source project '
+    categories: Development
+    type:  No
+    ssl:  Yes
+    url:  https://verse.pawelad.xyz/
+-
+    name:  File.io
+    description:  File Sharing
+    categories: Documents & Productivity
+    type:  No
+    ssl:  Yes
+    url:  https://www.file.io
+-
+    name:  pdflayer API
+    description:  HTML/URL to PDF
+    categories: Documents & Productivity
+    type:  No
+    ssl:  Yes
+    url:  https://pdflayer.com
+-
+    name:  PrexView
+    description:  Data from XML or JSON to PDF
+    categories: Documents & Productivity
+    type: apiKey
+    ssl: Yes
+    url: https://prexview.com
+-
+    name:  Todoist
+    description:  Todo Lists
+    categories: Documents & Productivity
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.todoist.com
+-
+    name:  Wunderlist
+    description:  Todo Lists
+    categories: Documents & Productivity
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.wunderlist.com/documentation
+-
+    name:  AirVisual
+    description:  Air quality and weather data
+    categories: Environment
+    type:  apiKey
+    ssl:  Yes
+    url:  https://airvisual.com/api
+-
+    name:  OpenAQ
+    description:  Open air quality data
+    categories: Environment
+    type:  apiKey
+    ssl:  Yes
+    url:  https://docs.openaq.org/
+-
+    name:  PM2.5.in
+    description:  Air quality of China
+    categories: Environment
+    type:  apiKey
+    ssl:  No
+    url:  http://www.pm25.in/api_doc
+-
+    name:  Barchart OnDemand
+    description: Stock, Futures, and Forex Market Data
+    categories: Finance
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.barchartondemand.com/free
+-
+    name:  Consumer Financial Protection Bureau
+    description:  Financial services consumer complains data
+    categories: Finance
+    type:  apiKey
+    ssl:  Yes
+    url:  https://data.consumerfinance.gov/resource/jhzv-w97w.json
+-
+    name:  BigOven
+    description:  Recipe Search
+    categories: Food & Drink
+    type:  X-Mashape-Key
+    ssl:  No
+    url:  http://api2.bigoven.com/
+-
+    name:  BreweryDB
+    description:  Beer
+    categories: Food & Drink
+    type:  apiKey
+    ssl:  No
+    url:  http://www.brewerydb.com/developers
+-
+    name:  Edamam
+    description:  Recipe Search
+    categories: Food & Drink
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.edamam.com/
+-
+    name:  Food2Fork
+    description:  Recipe Search
+    categories: Food & Drink
+    type:  apiKey
+    ssl:  No
+    url:  http://food2fork.com/about/api
+-
+    name:  LCBO
+    description:  Alcohol
+    categories: Food & Drink
+    type:  apiKey
+    ssl:  Yes
+    url:  https://lcboapi.com/
+-
+    name:  PunkAPI
+    description:  Brewdog Beer Recipes
+    categories: Food & Drink
+    type:  No
+    ssl:  Yes
+    url:  https://punkapi.com/
+-
+    name:  Recipe Puppy
+    description:  Food
+    categories: Food & Drink
+    type:  No
+    ssl:  No
+    url:  http://www.recipepuppy.com/about/api/
+-
+    name:  TacoFancy
+    description:  Community-driven taco database
+    categories: Food & Drink
+    type:  No
+    ssl:  No
+    url:  https://github.com/evz/tacofancy-api
+-
+    name:  Yummly
+    description:  Find food recipes
+    categories: Food & Drink
+    type:  No
+    ssl:  Yes
+    url:  https://developer.yummly.com/
+-
+    name:  Zomato
+    description:  Discover restaurants
+    categories: Food & Drink
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developers.zomato.com/api
+-
+    name:  Whitepages Pro
+    description:  Global identity verification with phone
+    categories: Fraud Prevention
+    type:  apiKey
+    ssl:  Yes
+    url: https://pro.whitepages.com/developer/documentation/identity-check-api/
+-
+    name:  Whitepages Pro
+    description:  Phone reputation to detect spammy phones
+    categories: Fraud Prevention
+    type:  apiKey
+    ssl:  Yes
+    url:  https://pro.whitepages.com/developer/documentation/phone-reputation-api/
+-
+    name:  Whitepages Pro
+    description: ' Get an owner''s name'
+    categories: Fraud Prevention
+    type:  apiKey
+    ssl:  Yes
+    url: https://pro.whitepages.com/developer/documentation/reverse-phone-api/
+-
+    name:  Whitepages Pro
+    description:  Phone number validation
+    categories: Fraud Prevention
+    type:  apiKey
+    ssl:  Yes
+    url: https://pro.whitepages.com/developer/documentation/phone-intelligence-api/
+-
+    name:  Whitepages Pro
+    description:  Get normalized physical address
+    categories: Fraud Prevention
+    type:  apiKey
+    ssl:  Yes
+    url: https://pro.whitepages.com/developer/documentation/reverse-address-api/
+-
+    name:  Battle.net
+    description:  Blizzard Entertainment
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://dev.battle.net/
+-
+    name:  Battlefield 4
+    description:  Battlefield 4 Information
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://bf4stats.com/api
+-
+    name:  Chuck Norris Database
+    description:  Jokes
+    categories: Games & Comics
+    type:  No
+    ssl:  No
+    url:  http://www.icndb.com/api/
+-
+    name:  Clash of Clans
+    description:  Clash of Clans Game Information
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://developer.clashofclans.com
+-
+    name:  Clash Royale
+    description:  Clash Royale Game Information
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/martincarrera/clash-royale-api
+-
+    name:  Comic Vine
+    description:  Comics
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://comicvine.gamespot.com/api/documentation
+-
+    name:  Deck of Cards
+    description:  Deck of Cards
+    categories: Games & Comics
+    type:  No
+    ssl:  No
+    url:  http://deckofcardsapi.com/
+-
+    name:  Eve Online
+    description:  Third-Party Developer Documentation
+    categories: Games & Comics
+    type:  OAuth required for some parts
+    ssl:  Yes
+    url:  https://eveonline-third-party-documentation.readthedocs.io/en/latest/
+-
+    name:  Giant Bomb
+    description:  Video Games
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://www.giantbomb.com/api/documentation
+-
+    name:  Guild Wars 2
+    description:  Guild Wars 2 Game Information
+    categories: Games & Comics
+    type:  apiKey
+    ssl:  Yes
+    url:  https://wiki.guildwars2.com/wiki/API:Main
+-
+    name:  Magic The Gathering
+    description:  Magic The Gathering Game Information
+    categories: Games & Comics
+    type:  No
+    ssl:  No
+    url:  http://magicthegathering.io/
+-
+    name:  Marvel
+    description:  Marvel Comics
+    categories: Games & Comics
+    type:  apiKey
+    ssl:  No
+    url:  http://developer.marvel.com
+-
+    name:  Minecraft
+    description:  Minecraft server info & user info
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://mcapi.ca/
+-
+    name:  Open Trivia
+    description:  Trivia Questions
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://opentdb.com/api_config.php
+-
+    name:  Pokéapi
+    description:  Pokémon Information
+    categories: Games & Comics
+    type:  No
+    ssl:  No
+    url:  http://pokeapi.co
+-
+    name:  Qriusity
+    description:  Quiz/Trivia Questions
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://qriusity.com/
+-
+    name:  Riot Games
+    description:  League of Legends Game Information
+    categories: Games & Comics
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.riotgames.com/
+-
+    name:  Steam
+    description:  Steam Client Interaction
+    categories: Games & Comics
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.valvesoftware.com/wiki/Steam_Web_API
+-
+    name:  SWAPI
+    description:  Star Wars Information
+    categories: Games & Comics
+    type:  No
+    ssl:  Yes
+    url:  https://swapi.co
+-
+    name:  adresse.data.gouv.fr
+    description:  Address database of France. geocoding and reverse.
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://adresse.data.gouv.fr
+-
+    name:  Bing Maps
+    description:  Create/customize digital maps based on Bing Maps data
+    categories: Geocoding
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.microsoft.com/maps/
+-
+    name:  Geocode.xyz
+    description: Provides worldwide forward/reverse geocoding, batch geocoding and geoparsing
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://geocode.xyz/
+-
+    name:  GeoNames
+    description:  Place names and other geographical data
+    categories: Geocoding
+    type:  No
+    ssl:  No
+    url:  http://www.geonames.org/export/web-services.html
+-
+    name: GeoApi
+    description:  French geographical data
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://api.gouv.fr/api/geoapi.html
+-
+    name:  Google Maps
+    description:  Create/customize digital maps based on Google Maps data
+    categories: Geocoding
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developers.google.com/maps/
+-
+    name:  IP 2 Country
+    description:  Map an IP to a country
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://ip2country.info
+-
+    name:  IP Address Details
+    description:  Find geolocation with ip address
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://ipinfo.io/
+-
+    name:  IP Vigilante
+    description:  Free IP Geolocation API
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://www.ipvigilante.com/
+-
+    name:  Mapbox
+    description:  Create/customize beautiful digital maps
+    categories: Geocoding
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.mapbox.com/developers/
+-
+    name:  Mapzen Search
+    description:  Open Source & Open Data Global Geocoding Service
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://mapzen.com/products/search/
+-
+    name:  Mexico
+    description:  Mexico RESTful zip codes API
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/IcaliaLabs/sepomex
+-
+    name:  One Map 2.0 - Singapore
+    description: Singapore Land Authority REST API services for Singapore addresses
+    categories: Geocoding
+    type: Yes
+    ssl: Yes
+    url: https://docs.onemap.sg/
+-
+    name:  OpenCage
+    description:  Forward and reverse geocoding using open data
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://geocoder.opencagedata.com
+-
+    name:  OpenStreetMap
+    description: Navigation, geolocation and geographical data
+    categories: Geocoding
+    type:  OAuth
+    ssl:  No
+    url:  http://wiki.openstreetmap.org/wiki/API
+-
+    name:  PostcodeData.nl
+    description:  Provide geolocation data based on postcode for Dutch addresses
+    categories: Geocoding
+    type:  No
+    ssl:  No
+    url:  http://api.postcodedata.nl/v1/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json
+-
+    name:  Postcodes.io
+    description:  Postcode lookup & Geolocation for the UK
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://postcodes.io
+-
+    name:  REST Countries
+    description:  Get information about countries via a RESTful API
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://restcountries.eu
+-
+    name:  Utah AGRC
+    description:  Utah Web API for geocoding Utah addresses
+    categories: Geocoding
+    type:  apiKey
+    ssl:  Yes
+    url:  https://api.mapserv.utah.gov
+-
+    name:  ViaCep
+    description:  Brazil RESTful zip codes API
+    categories: Geocoding
+    type:  No
+    ssl:  Yes
+    url:  https://viacep.com.br
+-
+    name:  Diabetes
+    description:  Logging and retrieving diabetes information
+    categories: Health
+    type:  No
+    ssl:  No
+    url:  http://predictbgl.com/api/
+-
+    name:  Flutrack
+    description:  Influenza-like symptoms with geotracking
+    categories: Health
+    type:  No
+    ssl:  No
+    url:  http://www.flutrack.org/
+-
+    name:  Makeup
+    description:  Makeup Information
+    categories: Health
+    type:  No
+    ssl:  No
+    url:  http://makeup-api.herokuapp.com/
+-
+    name:  Nutritionix
+    description:  Worlds largest verified nutrition database
+    categories: Health
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.nutritionix.com/
+-
+    name:  openFDA
+    description: Public FDA data about drugs, devices, and foods
+    categories: Health
+    type: No
+    ssl: Yes
+    url: https://open.fda.gov/api/
+-
+    name:  USDA Nutrients
+    description:  National Nutrient Database for Standard Reference
+    categories: Health
+    type:  No
+    ssl:  Yes
+    url:  https://ndb.nal.usda.gov/ndb/doc/index
+-
+    name:  API.AI
+    description:  Natural Language Processing
+    categories: Machine Learning
+    type:  apikey
+    ssl:  Yes
+    url:  https://api.ai/
+-
+    name:  Clarifai
+    description:  Computer Vision
+    categories: Machine Learning
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.clarifai.com/
+-
+    name:  Cleverbot
+    description:  Web chat bot
+    categories: Machine Learning
+    type:  apikey
+    ssl:  Yes
+    url:  https://www.cleverbot.com/api/
+-
+    name:  Keen IO
+    description:  Data Analytics
+    categories: Machine Learning
+    type:  apikey
+    ssl:  Yes
+    url:  https://keen.io/
+-
+    name:  Unplugg
+    description:  Forecasting API for timeseries data
+    categories: Machine Learning
+    type:  apikey
+    ssl:  Yes
+    url:  https://unplu.gg/test_api.html
+-
+    name:  Wit.ai
+    description:  Natural Language Processing
+    categories: Machine Learning
+    type:  OAuth
+    ssl:  Yes
+    url:  https://wit.ai/
+-
+    name:  Newton
+    description:  Symbolic and Arithmetic Math Calculator
+    categories: Math
+    type:  No
+    ssl:  Yes
+    url:  https://newton.now.sh/
+-
+    name:  Numbers API
+    description:  Facts about numbers
+    categories: Math
+    type:  No
+    ssl:  No
+    url:  http://numbersapi.com
+-
+    name:  Bandsintown
+    description:  Music Events
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0
+-
+    name:  Deezer
+    description:  Music
+    categories: Music
+    type:  OAuth
+    ssl:  No
+    url:  http://developers.deezer.com/login?redirect=/api
+-
+    name:  Discogs
+    description:  Music
+    categories: Music
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.discogs.com/developers/
+-
+    name:  Genius
+    description:  Crowdsourced lyrics and music knowledge
+    categories: Music
+    type:  OAuth
+    ssl:  Yes
+    url:  https://docs.genius.com/
+-
+    name:  Jamendo
+    description:  Music
+    categories: Music
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.jamendo.com/v3.0
+-
+    name:  iTunes Search
+    description:  Software products
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+-
+    name:  LastFm
+    description:  Music
+    categories: Music
+    type:  No
+    ssl:  No
+    url:  http://www.last.fm/api
+-
+    name:  Mixcloud
+    description:  Music
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://www.mixcloud.com/developers/
+-
+    name:  MusicBrainz
+    description:  Music
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2
+-
+    name:  Musikki
+    description:  Music
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://music-api.musikki.com/reference
+-
+    name:  Musixmatch
+    description:  Music
+    categories: Music
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.musixmatch.com/
+-
+    name:  Songsterr
+    description:  Provides guitar, bass and drums tabs and chords
+    categories: Music
+    type: No
+    ssl: Yes
+    url: https://www.songsterr.com/a/wa/api/
+-
+    name:  Soundcloud
+    description:  Music
+    categories: Music
+    type:  No
+    ssl:  Yes
+    url:  https://developers.soundcloud.com/
+-
+    name:  Spotify
+    description:  Music
+    categories: Music
+    type:  OAuth required for some parts
+    ssl:  Yes
+    url:  https://developer.spotify.com/web-api/
+-
+    name:  Vagalume
+    description:  Crowdsourced lyrics and music knowledge
+    categories: Music
+    type:  apiKey
+    ssl:  Yes
+    url:  https://api.vagalume.com.br/docs/
+-
+    name:  New York Times
+    description:  Provides news
+    categories: News
+    type:  apikey
+    ssl:  Yes
+    url:  https://developer.nytimes.com/
+-
+    name:  News API
+    description:  headlines currently published on a range of news sources and blogs
+    categories: News
+    type:  apikey
+    ssl:  Yes
+    url:  https://newsapi.org/
+-
+    name:  The Guardian
+    description:  Access all the content the Guardian creates, categorised by tags and section
+    categories: News
+    type: apiKey
+    ssl: Yes
+    url: http://open-platform.theguardian.com/
+-
+    name:  Countly
+    description:  Countly web analytics
+    categories: Open Source projects
+    type:  No
+    ssl:  No
+    url:  http://resources.count.ly/docs
+-
+    name:  Drupal.org
+    description:  Drupal.org
+    categories: Open Source projects
+    type:  No
+    ssl:  Yes
+    url:  https://www.drupal.org/drupalorg/docs/api
+-
+    name:  Libraries.io
+    description:  Open source software libraries
+    categories: Open Source projects
+    type:  apiKey
+    ssl:  Yes
+    url:  https://libraries.io/api
+-
+    name:  chucknorris.io
+    description:  JSON API for hand curated Chuck Norris jokes
+    categories: Personality
+    type:  No
+    ssl:  Yes
+    url:  https://api.chucknorris.io
+-
+    name:  Forismatic
+    description:  Inspirational Quotes
+    categories: Personality
+    type:  No
+    ssl:  No
+    url:  http://forismatic.com/en/api/
+-
+    name:  Medium
+    description:  Community of readers and writers offering unique perspectives on ideas.
+    categories: Personality
+    type:  OAuth
+    ssl:  Yes
+    url:  https://github.com/Medium/medium-api-docs
+-
+    name:  Quotes on Design
+    description:  Inspirational Quotes
+    categories: Personality
+    type:  No
+    ssl:  Yes
+    url:  https://quotesondesign.com/api-v4-0/
+-
+    name:  Traitify
+    description:  Assess, collect, and analyze Personality
+    categories: Personality
+    type: No
+    ssl: Yes
+    url: https://app.traitify.com/developer
+-
+    name:  tronalddump.io
+    description:  Api & web archive for the things Donald Trump has said
+    categories: Personality
+    type:  No
+    ssl:  Yes
+    url:  https://www.tronalddump.io
+-
+    name:  500px
+    description:   Photography Community
+    categories: Photography
+    type:  OAuth
+    ssl:  Yes
+    url:  https://github.com/500px/api-documentation
+-
+    name:  Flickr
+    description:  Flickr Services
+    categories: Photography
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.flickr.com/services/api/
+-
+    name:  Gfycat
+    description:  Jiffier GIFs
+    categories: Photography
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.gfycat.com/api/
+-
+    name:  Giphy
+    description:  Get all your gifs
+    categories: Photography
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/Giphy/GiphyAPI
+-
+    name:  Imgur
+    description:  Images
+    categories: Photography
+    type:  OAuth
+    ssl:  Yes
+    url:  https://api.imgur.com/#overview
+-
+    name:  ScreenShotLayer
+    description:  URL 2 Image
+    categories: Photography
+    type:  No
+    ssl:  Yes
+    url:  https://screenshotlayer.com
+-
+    name:  Unsplash
+    description:  Photography
+    categories: Photography
+    type:  OAuth
+    ssl:  Yes
+    url:  https://unsplash.com/developers
+-
+    name:  arcsecond.io
+    description:  Multiple astronomy data sources
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://api.arcsecond.io/
+-
+    name:  Fedger.io
+    description:  Query machine intelligence data
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://dev.fedger.io/docs/
+-
+    name:  inspirehep.net
+    description:  High Energy Physics info. system
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://inspirehep.net/info/hep/api?ln=en
+-
+    name:  Launch Library
+    description:  Upcoming Space Launches
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://launchlibrary.net/1.2/docs/api.html
+-
+    name:  Minor Planet Center
+    description:  Asterank.com Information
+    categories: Science
+    type:  No
+    ssl:  No
+    url:  http://www.asterank.com/mpc
+-
+    name:  NASA
+    description: NASA data, including imagery
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url: https://api.nasa.gov
+-
+    name:  Open Notify
+    description: ISS astronauts, current location, etc
+    categories: Science
+    type:  No
+    ssl:  No
+    url:  http://open-notify.org/Open-Notify-API/
+-
+    name:  Sunrise and Sunset
+    description:  Sunset and sunrise times for a given latitude and longitude.
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://sunrise-sunset.org/api
+-
+    name:  USGS Earthquake Hazards Program
+    description:  Earthquakes data real-time
+    categories: Science
+    type:  No
+    ssl:  Yes
+    url:  https://earthquake.usgs.gov/fdsnws/event/1/
+-
+    name:  World Bank
+    description:  World Data
+    categories: Science
+    type:  No
+    ssl:  No
+    url:  https://datahelpdesk.worldbank.org/knowledgebase/topics/125589
+-
+    name:  AXFR Database
+    description:  AXFR public database
+    categories: Security
+    type:  No
+    ssl:  No
+    url:  http://api.axfrcheck.com
+-
+    name:  UK Police
+    description:  UK Police data
+    categories: Security
+    type:  No
+    ssl:  Yes
+    url:  https://data.police.uk/docs/
+-
+    name:  eBay
+    description:  Sell and Buy on eBay
+    categories: Shopping
+    type:  OAuth
+    ssl:  Yes
+    url:  https://go.developer.ebay.com/
+-
+    name:  Discord
+    description: Make bots for Discord, integrate Discord onto an external platform
+    categories: Social
+    type: OAuth
+    ssl:  Yes
+    url:  https://discordapp.com/developers/docs/intro
+-
+    name:  DonReach Social Count
+    description:  Get the social share count of a URL from every major social network
+    categories: Social
+    type:  No
+    ssl:  Yes
+    url:  https://donreach.com/social-share-count/
+-
+    name:  Facebook
+    description: Facebook Login, Share on FB, Social Plugins, Analytics and more
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.facebook.com/
+-
+    name:  Foursquare
+    description: Interact with Foursquare users and places (geolocation-based checkins, photos, tips, events, etc
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.foursquare.com/
+-
+    name:  Fuck Off as a Service
+    description:  Asks someone to fuck off
+    categories: Social
+    type:  No
+    ssl:  Yes
+    url:  https://www.foaas.com
+-
+    name:  Full Contact
+    description:  Get Social Media profiles and contact Information
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.fullcontact.com/developer/docs/
+-
+    name:  HackerNews
+    description:  Social news for CS and entrepreneurship
+    categories: Social
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/HackerNews/API
+-
+    name:  Instagram
+    description: Instagram Login, Share on Instagram, Social Plugins and more
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.instagram.com/developer/
+-
+    name:  LinkedIn
+    description:  The foundation of all digital integrations with LinkedIn
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.linkedin.com/docs/rest-api
+-
+    name:  Meetup.com
+    description:  Data about Meetups from Meetup.com
+    categories: Social
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.meetup.com/meetup_api/
+-
+    name:  Telegram MTProto
+    description:  Read and write Telegram data
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://core.telegram.org/api#getting-started
+-
+    name:  Telegram bot
+    description:  Simplified HTTP version of the MTProto API for bots
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://core.telegram.org/bots/api
+-
+    name:  Pinterest
+    description: ' The world''s catalog of ideas '
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.pinterest.com/
+-
+    name:  PWRTelegram bot
+    description:  Boosted version of the Telegram bot API
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://pwrtelegram.xyz
+-
+    name:  Reddit
+    description:  Homepage of the internet
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.reddit.com/dev/api
+-
+    name:  Slack
+    description:  Team Instant Messaging
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://api.slack.com/
+-
+    name:  Tumblr
+    description:  Read and write Tumblr Data
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.tumblr.com/docs/en/api/v2
+-
+    name:  Twitch
+    description:  Game Streaming API
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://github.com/justintv/Twitch-API
+-
+    name:  Twitter
+    description:  Read and write Twitter data
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://dev.twitter.com/rest/public
+-
+    name:  vk
+    description:  Read and write vk dat
+    categories: Social
+    type:  OAuth
+    ssl:  Yes
+    url:  https://vk.com/dev/sites
+-
+    name:  Cartola FC
+    description:  The Cartola FC API serves to check the partial points of your team.
+    categories: Sports & Fitness
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/wgenial/cartrolandofc
+-
+    name:  City Bikes
+    description:  City Bikes around the world
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://api.citybik.es/v2/
+-
+    name:  Ergast F1
+    description:  F1 data from the beginning of the world championships in 1950
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://ergast.com/mrd/
+-
+    name:  Fitbit
+    description:  Fitbit Information
+    categories: Sports & Fitness
+    type:  OAuth
+    ssl:  Yes
+    url:  https://dev.fitbit.com/
+-
+    name:  Football-Data.org
+    description:  Football Data
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://api.football-data.org/index
+-
+    name:  JCDecaux Bike
+    description: ' JCDecaux''s self-service bicycles '
+    categories: Sports & Fitness
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.jcdecaux.com/
+-
+    name:  Cricket Live Scores
+    description:  live-score
+    categories: Sports & Fitness
+    type:  X-Mashape-Key
+    ssl:  Yes
+    url:  https://market.mashape.com/dev132/cricket-live-scores
+-
+    name:  NFL Arrests
+    description:  NFL Arrest Data
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://nflarrest.com/api/
+-
+    name:  Pro Motocross
+    description:  The RESTful AMA Pro Motocross lap times for every racer on the start gate
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://promotocrossapi.com
+-
+    name:  Strava
+    description: Connect with athletes, activities and more
+    categories: Sports & Fitness
+    type:  OAuth
+    ssl:  Yes
+    url:  https://strava.github.io/api/
+-
+    name:  UFC Data
+    description:  Ultimate Fighting Championship information for events and fighters
+    categories: Sports & Fitness
+    type:  No
+    ssl:  No
+    url:  http://ufc-data-api.ufc.com/
+-
+    name:  Wger
+    description: Workout manager data as exercises, muscles or equipments
+    categories: Sports & Fitness
+    type:  apiKey
+    ssl:  Yes
+    url:  https://wger.de/en/software/api
+-
+    name:  Postmon
+    description: An API to query Brazilian ZIP codes and orders easily, quickly and free
+    categories: Tracking
+    type:  No
+    ssl:  No
+    url:  http://postmon.com.br
+-
+    name:  Sweden
+    description:  Provides  information about parcels in transport
+    categories: Tracking
+    type:  apikey
+    ssl:  No
+    url:  https://developer.postnord.com/docs2
+-
+    name:  Amadeus Travel Innovation Sandbox
+    description:  Travel Search - Limited usage
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://sandbox.amadeus.com/
+-
+    name:  Community Transit
+    description:  Transitland API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints
+-
+    name:  Goibibo
+    description:  API for travel search
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.goibibo.com/docs
+-
+    name:  Indian Railways
+    description:  Indian Railways Information
+    categories: Transportation
+    type:  token
+    ssl:  No
+    url:  http://api.erail.in/
+-
+    name:  Navitia
+    description:  The open API for building cool stuff with transport data
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://api.navitia.io/
+-
+    name:  The Nomad List
+    description:  A list of the best places to live/work remotely
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://nomadlist.com/faq
+-
+    name:  Schiphol Airport
+    description:  Schiphol
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.schiphol.nl/
+-
+    name:  TransitLand
+    description:  Transit Aggregation
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://transit.land/documentation/datastore/api-endpoints.html
+-
+    name: Transport for Atlanta, US
+    description:  Marta
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www.itsmarta.com/app-developer-resources.aspx
+-
+    name: Transport for Auckland, New Zealand
+    description:  Auckland Transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://api.at.govt.nz/
+-
+    name: Transport for Belgium
+    description:  Belgian transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://hello.irail.be/api/
+-
+    name: Transport for Berlin, Germany
+    description:  third-party VBB API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/derhuerst/vbb-rest/blob/master/docs/index.md
+-
+    name: Transport for Boston, US
+    description:  MBTA API
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://realtime.mbta.com/Portal/Home/Documents
+-
+    name: Transport for Budapest, Hungary
+    description:  Budapest public transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://apiary.io/
+-
+    name: Transport for Chicago, US
+    description:  CTA
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www.transitchicago.com/developers/
+-
+    name: Transport for Czech Republic
+    description:  Czech transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://www.chaps.cz/eng/products/idos-internet
+-
+    name: Transport for Denver, US
+    description:  RTD
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www.rtd-denver.com/gtfs-developer-guide.shtml
+-
+    name: Transport for Finland
+    description:  Finnish transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://digitransit.fi/en/developers/
+-
+    name: Transport for Germany
+    description:  Deutsche Bahn (DB API
+    categories: Transportation
+    type:  apiKey
+    ssl:  No
+    url:  http://data.deutschebahn.com/dataset/api-fahrplan
+-
+    name: Transport for India
+    description:  India Public Transport API
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://data.gov.in/sector/transport
+-
+    name: Transport for London, England
+    description:  TfL API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://api.tfl.gov.uk
+-
+    name: Transport for Madrid, Spain
+    description:  Madrid BUS transport API
+    categories: Transportation
+    type:  apiKey
+    ssl:  No
+    url:  http://opendata.emtmadrid.es/Servicios-web/BUS
+-
+    name: Transport for Minneapolis, US
+    description:  NexTrip API
+    categories: Transportation
+    type:  OAuth
+    ssl:  No
+    url:  http://svc.metrotransit.org/
+-
+    name: Transport for New York City, US
+    description:  MTA
+    categories: Transportation
+    type:  apiKey
+    ssl:  No
+    url:  http://datamine.mta.info/
+-
+    name: Transport for Norway
+    description:  Norwegian transport API
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://reisapi.ruter.no/help
+-
+    name: Transport for Ottawa, Canada
+    description:  OC Transpo next bus arrival API
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www.octranspo.com/index.php/developers
+-
+    name: Transport for Paris, France
+    description:  RATP Open Data API
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://data.ratp.fr/api/v1/console/datasets/1.0/search/
+-
+    name: Transport for Paris, France
+    description:  Live schedules made simple
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://restratpws.azurewebsites.net/swagger/
+-
+    name: Transport for Philadelphia, US
+    description:  SEPTA APIs
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www3.septa.org/hackathon/
+-
+    name: Transport for Rio de Janeiro, Brazil
+    description:  Prefeitura do Rio (City Hall
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://data.rio/group/transporte-e-mobilidade
+-
+    name: Transport for S�o Paulo, Brazil
+    description:  SPTrans
+    categories: Transportation
+    type:  OAuth
+    ssl:  No
+    url:  http://www.sptrans.com.br/desenvolvedores/APIOlhoVivo/Documentacao.aspx
+-
+    name: Transport for Sweden
+    description:  Public Transport consumer
+    categories: Transportation
+    type:  OAuth
+    ssl:  Yes
+    url:  https://www.trafiklab.se/api
+-
+    name: Transport for Switzerland
+    description:  Swiss public transport API
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://transport.opendata.ch/
+-
+    name: Transport for Switzerland
+    description:  Official Swiss Public Transport Open Data
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://opentransportdata.swiss/en/
+-
+    name: Transport for The Netherlands
+    description:  NS
+    categories: Transportation
+    type:  No
+    ssl:  No
+    url:  http://www.ns.nl/reisinformatie/ns-api
+-
+    name: Transport for Tokyo, Japan
+    description:  Tokyo Metro
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://developer.tokyometroapp.jp/info
+-
+    name: Transport for Toronto, Canada
+    description:  TTC
+    categories: Transportation
+    type:  No
+    ssl:  Yes
+    url:  https://myttc.ca/developers
+-
+    name: Transport for Vancouver, Canada
+    description:  TransLink
+    categories: Transportation
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.translink.ca/
+-
+    name: Transport for Victoria, AU
+    description:  PTV API
+    categories: Transportation
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.ptv.vic.gov.au/about-ptv/ptv-data-and-reports/digital-products/ptv-timetable-api/
+-
+    name: Transport for Washington, US
+    description:  Washington Metro transport API
+    categories: Transportation
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.wmata.com/
+-
+    name:  Uber
+    description: Request Uber rides, reach riders, transport things, and reward drivers
+    categories: Transportation
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.uber.com/
+-
+    name:  WhereIsMyTransport
+    description:  Platform for public transport data in emerging cities
+    categories: Transportation
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.whereismytransport.com/
+-
+    name:  Universities List
+    description: University names, countries and domains
+    categories: University
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/Hipo/university-domains-list
+-
+    name:  Vehicles
+    description:  Lot of vehicles informations
+    categories: Vehicle
+    type:  apiKey
+    ssl:  No
+    url:  http://developer.edmunds.com/api-documentation/overview/
+-
+    name:  Brazilian Vehicles and Prices
+    description:  Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe
+    categories: Vehicle
+    type:  No
+    ssl:  Yes
+    url:  https://deividfortuna.github.io/fipe/
+-
+    name:  NHTSA Vehicles
+    description:  NHTSA Product Information Catalog and Vehicle Listing
+    categories: Vehicle
+    type:  No
+    ssl:  Yes
+    url:  https://vpic.nhtsa.dot.gov/api/
+-
+    name:  An API of Ice And Fire
+    description:  Game Of Thrones API
+    categories: Video
+    type:  No
+    ssl:  Yes
+    url:  https://anapioficeandfire.com/
+-
+    name:  Dailymotion
+    description:  Dailymotion Developer API
+    categories: Video
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.dailymotion.com/
+-
+    name:  MovieDB
+    description:  Movie Data
+    categories: Video
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.themoviedb.org/documentation/api
+-
+    name:  Netflix Roulette
+    description:  Netflix database
+    categories: Video
+    type:  No
+    ssl:  No
+    url:  http://netflixroulette.net/api/
+-
+    name:  Ron Swanson Quotes
+    description:  Television
+    categories: Video
+    type:  No
+    ssl:  Yes
+    url:  https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api
+-
+    name:  TVMaze
+    description:  TV Show Data
+    categories: Video
+    type:  No
+    ssl:  No
+    url:  http://www.tvmaze.com/api
+-
+    name:  Vimeo
+    description:  Vimeo Developer API
+    categories: Video
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developer.vimeo.com/
+-
+    name:  YouTube
+    description:  Add YouTube functionality to your sites and apps.
+    categories: Video
+    type:  OAuth
+    ssl:  Yes
+    url:  https://developers.google.com/youtube/
+-
+    name:  Dark Sky
+    description:  Weather
+    categories: Weather
+    type:  apiKey
+    ssl:  Yes
+    url:  https://darksky.net/dev/
+-
+    name:  MetaWeather
+    description:  Weather
+    categories: Weather
+    type:  No
+    ssl:  Yes
+    url:  https://www.metaweather.com/api/
+-
+    name:  OpenWeatherMap
+    description:  Weather
+    categories: Weather
+    type:  apiKey
+    ssl:  No
+    url:  http://openweathermap.org/api
+-
+    name:  Weatherbit
+    description:  Weather
+    categories: Weather
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.weatherbit.io/api
+-
+    name:  Wunderground
+    description:  Weather
+    categories: Weather
+    type:  apiKey
+    ssl:  Yes
+    url:  https://www.wunderground.com/weather/api/
+-
+    name:  Yahoo! Weather
+    description:  Weather
+    categories: Weather
+    type:  No
+    ssl:  Yes
+    url:  https://developer.yahoo.com/weather/
