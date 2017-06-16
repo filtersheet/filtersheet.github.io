@@ -285,7 +285,7 @@ a.link-div:hover {
 }
 
 .horizontal-padding-medium {
-  padding: 2.2em 0 2.2em 0;
+  padding: 3.3em 0 3.3em 0;
 }
 
 .horizontal-padding-large {
@@ -430,6 +430,10 @@ h2.cover {
     background-image: url("/assets/img/hero.png");
     background-color: $shallowTone;
     background-attachment: fixed;
+}
+
+.intro-body {
+  padding-top: 1em;
 }
 
 .intro-body h1 {
