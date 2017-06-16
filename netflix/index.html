@@ -1,0 +1,54 @@
+---
+layout: default
+header: "Netflix Cheatcodes"
+menu: "netflix"
+searchable: "true"
+headerStyle: "background-color: #e50914;"
+---
+
+{% include block/header.html %}
+
+<section>
+    <div class="container-narrow horizontal-padding-medium">
+        <div class="row">
+            <div id="listToFilter">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Genre</th>
+                            <th>Meta</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        {% for code in site.data.netflix.cheatcodes %}
+                        <tr>
+                            <td class="id">{{ code.id }}</td>
+                            <td class="genre">{{ code.genre }}</td>
+                            <td class="meta">{{ code.meta }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- /#filterList -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var options = {
+        valueNames: ['genre', 'meta', 'id']
+    };
+
+    var list = new List('listToFilter', options);
+
+    $('#filterText').on('keyup', function() {
+        var searchString = $(this).val();
+        list.search(searchString);
+    });
+});
+</script>
