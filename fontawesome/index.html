@@ -1,20 +1,12 @@
 ---
 layout: default
-header: "FontAwesome Icon Filter"
+header: "FontAwesome Icons"
 menu: "fontawesome"
 searchable: "true"
-data: fontawesome
+headerStyle: "background-color: #1b6cf1;"
 ---
 
-<section id="intro" class="background-filtersheet-core">
-    <div class="container horizontal-padding-medium">
-        <div class="row">
-            <div class="intro-body">
-                <h1 class="text-white text-center text-shadow-dark">{{ page.header }}</h1>
-            </div>
-        <div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /#intro -->
+{% include block/header.html %}
 
 <section>
     <div class="container-narrow horizontal-padding-medium">
@@ -27,7 +19,7 @@ data: fontawesome
                             <th>Code</th>
                             <th>Version</th>
                             <th>Categories</th>
-                          </tr>
+                        </tr>
                     </thead>
                     <tbody class="list">
                         {% for icon in site.data.fontawesome.icons %}
@@ -40,22 +32,26 @@ data: fontawesome
                         {% endfor %}
                     </tbody>
                 </table>
-            </div><!-- /#filterList -->
-        <div><!-- /.row -->
-    </div><!-- /.container -->
+            </div>
+            <!-- /#filterList -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
 </section>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        var options = {
-            valueNames: [ 'name', 'unicode', 'created', 'categories' ]
-        };
+$(document).ready(function() {
+    var options = {
+        valueNames: ['name', 'unicode', 'created', 'categories']
+    };
 
-        var userList = new List('listToFilter', options);
+    var list = new List('listToFilter', options);
 
-        $('#filterText').on('keyup', function() {
-            var searchString = $(this).val();
-            userList.search(searchString);
-        });
+    $('#filterText').on('keyup', function() {
+        var searchString = $(this).val();
+        list.search(searchString);
     });
+});
 </script>
+

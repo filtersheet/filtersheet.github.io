@@ -1,20 +1,17 @@
-
-{% include structure/ie.html %}
-
-{% if page.header %}
+ {% if page.header %}
 <header>
-    <section id="page-heading" class="palette">
-        <div id="heading-banner">
-            <div class="container">
-                <div class="row">
-                    {% if page.subheader %}
-                    <h1 class="page-header">{{ page.header }} <small>{{ page.subheader }}</small></h1>
-                    {% else %}
-                    <h1 class="page-header">{{ page.header }}</h1>
-                    {% endif %}
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /#heading-banner -->
-    </section><!-- /#page-heading -->
+    <section id="intro" class="background-filtersheet-core" style="{{ page.headerStyle }}">
+        <div class="container horizontal-padding-medium">
+            <div class="row">
+                <div class="intro-body">
+                    <h1 class="text-white text-center text-shadow-dark">{{ page.header }}</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#intro -->
+    <!-- /#page-heading -->
 </header>
 {% endif %}
