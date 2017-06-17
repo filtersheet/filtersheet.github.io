@@ -15,6 +15,7 @@ headerStyle: "background-color: #1b6cf1;"
                 <table class="table">
                     <thead>
                         <tr>
+                            <th>Icon</th>
                             <th>Name</th>
                             <th>Code</th>
                             <th>Version</th>
@@ -24,6 +25,7 @@ headerStyle: "background-color: #1b6cf1;"
                     <tbody class="list">
                         {% for icon in site.data.fontawesome.icons %}
                         <tr>
+                            <td class="icon"><i class="fa fa-{{ icon.id }}"></i></td>
                             <td class="name">{{ icon.name }}</td>
                             <td class="unicode">{{ icon.unicode }}</td>
                             <td class="created">{{ icon.created }}</td>
