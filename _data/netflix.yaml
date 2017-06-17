@@ -8,7 +8,7 @@ cheatcodes:
       meta: "comedy humors funny"
     - genre: "Action Sci-Fi & Fantasy"
       id: 1568
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Action Thrillers"
       id: 43048
       meta: ""
@@ -23,7 +23,7 @@ cheatcodes:
       meta: ""
     - genre: "Alien Sci-Fi"
       id: 3327
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Animal Tales"
       id: 5507
       meta: ""
@@ -50,7 +50,7 @@ cheatcodes:
       meta: "drawn animations cartoons"
     - genre: "Anime Sci-Fi"
       id: 2729
-      meta: "drawn animations cartoons sciences fictions"
+      meta: "drawn animations cartoons scifi sciences fictions"
     - genre: "Anime Series"
       id: 6721
       meta: "drawn animations cartoons"
@@ -122,7 +122,7 @@ cheatcodes:
       meta: ""
     - genre: "Classic Sci-Fi & Fantasy"
       id: 47147
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Classic Thrillers"
       id: 46588
       meta: ""
@@ -176,7 +176,7 @@ cheatcodes:
       meta: ""
     - genre: "Cult Sci-Fi & Fantasy"
       id: 4734
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Cult TV Shows"
       id: 74652
       meta: "televisions"
@@ -263,7 +263,7 @@ cheatcodes:
       meta: ""
     - genre: "Foreign Sci-Fi & Fantasy"
       id: 6485
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Foreign Thrillers"
       id: 10306
       meta: ""
@@ -470,19 +470,19 @@ cheatcodes:
       meta: ""
     - genre: "Sci-Fi & Fantasy"
       id: 1492
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Sci-Fi Adventure"
       id: 6926
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Sci-Fi Dramas"
       id: 3916
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Sci-Fi Horror Movies"
       id: 1694
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Sci-Fi Thrillers"
       id: 11014
-      meta: "sciences fictions"
+      meta: "scifi sciences fictions"
     - genre: "Science & Nature Documentaries"
       id: 2595
       meta: ""
@@ -608,7 +608,7 @@ cheatcodes:
       meta: "televisions"
     - genre: "TV Sci-Fi & Fantasy"
       id: 1372
-      meta: "televisions sciences fictions"
+      meta: "televisions scifi sciences fictions"
     - genre: "TV Shows"
       id: 83
       meta: "televisions"
