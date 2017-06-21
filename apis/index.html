@@ -1,0 +1,60 @@
+---
+layout: default
+header: "API's"
+filterHint: "Type to filter API's. Example filters: oauth, json, or map ..."
+menu: "apis"
+searchable: "true"
+headerStyle: "background-color: #20203d;"
+---
+
+{% include block/header.html %}
+
+<section>
+    <div class="container-narrow horizontal-padding-medium">
+        <div class="row">
+            <div id="listToFilter">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Categories</th>
+                            <th>Type</th>
+                            <th>SSL</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        {% for api in site.data.apis.apis %}
+                        <tr>
+                            <td class="name"><a href="{{ api.url }}" target="_blank">{{ api.name }}</a></td>
+                            <td class="description">{{ api.description }}</td>
+                            <td class="categories">{{ api.categories }}</td>
+                            <td class="type">{{ api.type }}</td>
+                            <td class="ssl">{{ api.ssl }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- /#filterList -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var options = {
+        valueNames: ['name', 'description', 'categories', 'type', 'ssl', 'url']
+    };
+
+    var list = new List('listToFilter', options);
+
+    $('#filterText').on('keyup', function() {
+        var searchString = $(this).val();
+        list.search(searchString);
+    });
+});
+</script>
+
