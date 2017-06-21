@@ -1,6 +1,7 @@
 ---
 layout: default
 header: "FontAwesome Icons"
+filterHint: "Type to filter fonts. Example filters: wine, email, or login ..."
 menu: "fontawesome"
 searchable: "true"
 headerStyle: "background-color: #1b6cf1;"
@@ -19,7 +20,7 @@ headerStyle: "background-color: #1b6cf1;"
                             <th>Name</th>
                             <th>Code</th>
                             <th>Version</th>
-                            <th>Categories</th>
+                            <th>Categories &amp; Meta</th>
                         </tr>
                     </thead>
                     <tbody class="list">
@@ -29,7 +30,10 @@ headerStyle: "background-color: #1b6cf1;"
                             <td class="name">{{ icon.name }}</td>
                             <td class="unicode">{{ icon.unicode }}</td>
                             <td class="created">{{ icon.created }}</td>
-                            <td class="categories">{{ icon.categories }}</td>
+                            <td class="categories">
+                                {{ icon.categories }}
+                                <span class="hidden">{{ icon.meta }}</span>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
