@@ -4,17 +4,15 @@
         <div class="row">
 
             <div class="col-xs-12">
-                <div class="navbar-header">
                 <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="hidden-xs brand">{{ site.title }}</a>
                 <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="hidden-sm hidden-md hidden-lg brand">{{ site.shortTitle }}</a>
-                </div>
 
                 {% if page.searchable == 'true' %}
 
-                    <div class="searchbar-inner-addon">
+                    <span class="searchbar-inner-addon">
                         <i class="fa fa-filter"></i>
                         <input type="search" class="search form-control form-top-pad" id="filterText" placeholder="{{ page.filterHint }}">
-                    </div>
+                    </span>
 
                 {% endif %}
             </div><!-- /.col -->
