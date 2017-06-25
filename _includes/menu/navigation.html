@@ -8,12 +8,9 @@
                 <a href="/" title="{{ site.title }} | {{ site.tagline }}" class="hidden-sm hidden-md hidden-lg brand">{{ site.shortTitle }}</a>
 
                 {% if page.searchable == 'true' %}
-
-                    <span class="searchbar-inner-addon">
-                        <i class="fa fa-filter"></i>
-                        <input type="search" class="search form-control form-top-pad" id="filterText" placeholder="{{ page.filterHint }}">
-                    </span>
-
+                    <div class="navbar-right eighty-percent-wide">
+                        {% include block/searchbox.html %}
+                    </div>
                 {% endif %}
             </div><!-- /.col -->
 
