@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 header: "Real Home Page"
 filterHint: "Type to find your filter ..."
 subheader: "Page"
@@ -13,6 +13,7 @@ subnavigation: "false"
             <div class="intro-body">
                 <h1 class="text-white text-center text-shadow-dark">{{ site.title }}</h1>
                 <h3 class="text-white text-center text-shadow-dark">{{ site.description }}</h3>
+                <div>{% include block/searchbox.html %}</div>
             </div>
         <div><!-- /.row -->
     </div><!-- /.container -->
