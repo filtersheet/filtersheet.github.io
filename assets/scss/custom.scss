@@ -408,15 +408,19 @@ h2.cover {
     color: $darkTone;
 }
 
-.searchbar-inner-addon {
+.searchbar {
+}
+
+.searchbar-full {
     position: relative;
     width: 80%;
     float: right;
 }
-.searchbar-inner-addon input {
+
+.searchbar input {
     padding-right: 30px;
 }
-.searchbar-inner-addon i {
+.searchbar i {
     position: absolute;
     right: 0px;
     padding: 16px 12px;
@@ -468,4 +472,8 @@ h2.cover {
     text-align: left;
     width: 80%;
     padding: 1em;
+}
+
+.eighty-percent-wide {
+  width: 80%;
 }
