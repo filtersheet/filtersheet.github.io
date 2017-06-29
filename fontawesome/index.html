@@ -26,8 +26,8 @@ headerStyle: "background-color: #1b6cf1;"
                     <tbody class="list">
                         {% for icon in site.data.fontawesome.icons %}
                         <tr>
-                            <td class="icon"><i class="fa fa-{{ icon.id }}"></i></td>
-                            <td class="name">{{ icon.name }}</td>
+                            <td class="icon"><a href="http://fontawesome.io/icon/{{ icon.id }}/" target="_blank"><i class="fa fa-{{ icon.id }}"></i></a></td>
+                            <td class="name"><a href="http://fontawesome.io/icon/{{ icon.id }}/" target="_blank">{{ icon.name }}</a></td>
                             <td class="unicode">{{ icon.unicode }}</td>
                             <td class="created">{{ icon.created }}</td>
                             <td class="categories">
