@@ -1,0 +1,11 @@
+statuses:
+  - code: 100
+    name: Continue
+    description:
+    type: informational
+    url: https://tools.ietf.org/html/rfc7231#section-6.2.1
+  - code: 101
+    name: Switching protocols
+    description:
+    type: informational
+    url: https://tools.ietf.org/html/rfc7231#section-6.2.2
