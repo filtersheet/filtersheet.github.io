@@ -1,0 +1,58 @@
+---
+layout: default
+header: "HTTP Statuses"
+filterHint: "Type to filter http statuses. Example filters: 404, informational, error ..."
+menu: "httpstatus"
+searchable: "true"
+headerStyle: "background-color: #27415e;"
+---
+
+{% include block/header.html %}
+
+<section>
+    <div class="container-narrow horizontal-padding-medium">
+        <div class="row">
+            <div id="listToFilter">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        {% for status in site.data.httpstatus.statuses %}
+                        <tr>
+                            <td class="code"><a href="{{ status.url }}" target="_blank">{{ status.code }}</a></td>
+                            <td class="name">{{ status.name }}</td>
+                            <td class="type">{{ status.type }}</td>
+                            <td class="description">{{ status.description }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- /#filterList -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var options = {
+        valueNames: ['code', 'name', 'type', 'description']
+    };
+
+    var list = new List('listToFilter', options);
+
+    $('#filterText').on('keyup', function() {
+        var searchString = $(this).val();
+        list.search(searchString);
+    });
+});
+</script>
+
