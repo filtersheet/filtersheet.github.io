@@ -17,8 +17,14 @@
   meta: "programming"
   logo: "api.png"
 
-- url: middleware
-  title: "Middleware"
-  description: "Middleware is computer software that connects software components or applications."
-  meta: "programming frameworks"
-  logo: "middleware.png"
+- url: httpstatus
+  title: "HTTP Statuses"
+  description: "Semantics of HTTP response messages."
+  meta: "web api"
+  logo: "httpstatus.png"
+
+# - url: middleware
+#   title: "Middleware"
+#   description: "Middleware is computer software that connects software components or applications."
+#   meta: "programming frameworks"
+#   logo: "middleware.png"
