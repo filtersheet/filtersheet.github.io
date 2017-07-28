@@ -1,11 +1,316 @@
 statuses:
   - code: 100
     name: Continue
-    description:
+    description: The 100 (Continue) status code indicates that the initial part of a request has been received and has not yet been rejected by the server.  The server intends to send a final response after the request has been fully received and acted upon.
     type: informational
     url: https://tools.ietf.org/html/rfc7231#section-6.2.1
   - code: 101
-    name: Switching protocols
-    description:
+    name: Switching Protocols
+    description: The 101 (Switching Protocols) status code indicates that the server understands and is willing to comply with the client's request, via the Upgrade header field (Section 6.7 of [RFC7230]), for a change in the application protocol being used on this connection.
     type: informational
     url: https://tools.ietf.org/html/rfc7231#section-6.2.2
+  - code: 102
+    name: Processing
+    description: The 102 (Processing) status code is an interim response used to inform the client that the server has accepted the complete request, but has not yet completed it.  This status code SHOULD only be sent when the server has a reasonable expectation that the request will take significant time to complete. As guidance, if a method is taking longer than 20 seconds (a reasonable, but arbitrary value) to process the server SHOULD return a 102 (Processing) response. The server MUST send a final response after the request has been completed.
+    type: informational
+    url: https://tools.ietf.org/html/rfc2518#section-10.1
+  - code: 200
+    name: OK
+    description:
+    type: success
+    url:
+  - code: 201
+    name: Created
+    description:
+    type: success
+    url:
+  - code: 202
+    name: Accepted
+    description:
+    type: success
+    url:
+  - code: 203
+    name: Non-authoritative Information
+    description:
+    type: success
+    url:
+  - code: 204
+    name: No Content
+    description:
+    type: success
+    url:
+  - code: 205
+    name: Reset Content
+    description:
+    type: success
+    url:
+  - code: 206
+    name: Partial Content
+    description:
+    type: success
+    url:
+  - code: 207
+    name: Multi-Status
+    description:
+    type: success
+    url:
+  - code: 208
+    name: Already Reported
+    description:
+    type: success
+    url:
+  - code: 226
+    name: IM Used
+    description:
+    type: success
+    url:
+  - code: 300
+    name: Multiple Choices
+    description:
+    type: redirection
+    url:
+  - code: 301
+    name: Moved Permanently
+    description:
+    type: redirection
+    url:
+  - code: 302
+    name: Found
+    description:
+    type: redirection
+    url:
+  - code: 303
+    name: See Other
+    description:
+    type: redirection
+    url:
+  - code: 304
+    name: Not Modified
+    description:
+    type: redirection
+    url:
+  - code: 305
+    name: Use Proxy
+    description:
+    type: redirection
+    url:
+  - code: 307
+    name: Temporary Redirect
+    description:
+    type: redirection
+    url:
+  - code: 308
+    name: Permanent Redirect
+    description:
+    type: redirection
+    url:
+  - code: 400
+    name: Bad Request
+    description:
+    type: client error
+    url:
+  - code: 401
+    name: Unauthorized
+    description:
+    type: client error
+    url:
+  - code: 402
+    name: Payment Required
+    description:
+    type: client error
+    url:
+  - code: 403
+    name: Forbidden
+    description:
+    type: client error
+    url:
+  - code: 404
+    name: Not Found
+    description:
+    type: client error
+    url:
+  - code: 405
+    name: Method Not Allowed
+    description:
+    type: client error
+    url:
+  - code: 406
+    name: Not Acceptable
+    description:
+    type: client error
+    url:
+  - code: 407
+    name: Proxy Authentication Required
+    description:
+    type: client error
+    url:
+  - code: 408
+    name: Request Timeout
+    description:
+    type: client error
+    url:
+  - code: 409
+    name: Conflict
+    description:
+    type: client error
+    url:
+  - code: 410
+    name: Gone
+    description:
+    type: client error
+    url:
+  - code: 411
+    name: Length Required
+    description:
+    type: client error
+    url:
+  - code: 412
+    name: Precondition Failed
+    description:
+    type: client error
+    url:
+  - code: 413
+    name: Payload Too Large
+    description:
+    type: client error
+    url:
+  - code: 414
+    name: Request-URI Too Long
+    description:
+    type: client error
+    url:
+  - code: 415
+    name: Unsupported Media Type
+    description:
+    type: client error
+    url:
+  - code: 416
+    name: Requested Range Not Satisfiable
+    description:
+    type: client error
+    url:
+  - code: 417
+    name: Expectation Failed
+    description:
+    type: client error
+    url:
+  - code: 418
+    name: I'm a teapot
+    description:
+    type: client error
+    url:
+  - code: 421
+    name: Misdirected Request
+    description:
+    type: client error
+    url:
+  - code: 422
+    name: Unprocessable Entity
+    description:
+    type: client error
+    url:
+  - code: 423
+    name: Locked
+    description:
+    type: client error
+    url:
+  - code: 424
+    name: Failed Dependency
+    description:
+    type: client error
+    url:
+  - code: 426
+    name: Upgrade Required
+    description:
+    type: client error
+    url:
+  - code: 428
+    name: Precondition Required
+    description:
+    type: client error
+    url:
+  - code: 429
+    name: Too Many Requests
+    description:
+    type: client error
+    url:
+  - code: 431
+    name: Request Header Fields Too Large
+    description:
+    type: client error
+    url:
+  - code: 444
+    name: Connection Closed Without Response
+    description:
+    type: client error
+    url:
+  - code: 451
+    name: Unavailable For Legal Reasons
+    description:
+    type: client error
+    url:
+  - code: 499
+    name: Client Closed Request
+    description:
+    type: client error
+    url:
+  - code: 500
+    name: Internal Server Error
+    description:
+    type: server error
+    url:
+  - code: 501
+    name: Not Implemented
+    description:
+    type: server error
+    url:
+  - code: 502
+    name: Bad Gateway
+    description:
+    type: server error
+    url:
+  - code: 503
+    name: Service Unavailable
+    description:
+    type: server error
+    url:
+  - code: 504
+    name: Gateway Timeout
+    description:
+    type: server error
+    url:
+  - code: 505
+    name: HTTP Version Not Supported
+    description:
+    type: server error
+    url:
+  - code: 506
+    name: Variant Also Negotiates
+    description:
+    type: server error
+    url:
+  - code: 507
+    name: Insufficient Storage
+    description:
+    type: server error
+    url:
+  - code: 508
+    name: Loop Detected
+    description:
+    type: server error
+    url:
+  - code: 510
+    name: Not Extended
+    description:
+    type: server error
+    url:
+  - code: 511
+    name: Network Authentication Required
+    description:
+    type: server error
+    url:
+  - code: 599
+    name: Network Connect Timeout Error
+    description:
+    type: server error
+    url:
