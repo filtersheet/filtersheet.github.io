@@ -1,0 +1,62 @@
+---
+layout: default
+header: "Passwords"
+filterHint: "Default passwords. Example filters: 3com, router, admin ..."
+menu: "passwords"
+searchable: "true"
+headerStyle: "background-color: #ffa500;"
+baseUrl: ""
+---
+
+{% include block/header.html %}
+
+<section>
+    <div class="container horizontal-padding-medium">
+        <div class="row">
+            <div id="listToFilter">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Manufacturer</th>
+                            <th>Product</th>
+                            <th>Version</th>
+                            <th>Protocol</th>
+                            <th>User</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        {% for password in site.data.passwords.secrets %}
+                        <tr>
+                            <td class="manufacturer">{{ password.manufacturer }}</td>
+                            <td class="product">{{ password.product }}</td>
+                            <td class="version">{{ password.version }}</td>
+                            <td class="protocol">{{ password.protocol }}</td>
+                            <td class="user">{{ password.user }}</td>
+                            <td class="password">{{ password.password }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- /#filterList -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var options = {
+        valueNames: ['manufacturer', 'product', 'version', 'protocol', 'user', 'password']
+    };
+
+    var list = new List('listToFilter', options);
+
+    $('#filterText').on('keyup', function() {
+        var searchString = $(this).val();
+        list.search(searchString);
+    });
+});
+</script>

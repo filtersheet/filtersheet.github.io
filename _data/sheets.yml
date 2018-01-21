@@ -23,8 +23,8 @@
   meta: "web api"
   logo: "httpstatus.png"
 
-# - url: middleware
-#   title: "Middleware"
-#   description: "Middleware is computer software that connects software components or applications."
-#   meta: "programming frameworks"
-#   logo: "middleware.png"
+- url: passwords
+  title: "Passwords"
+  description: "Big fat list of default passwords for things."
+  meta: "security passwords"
+  logo: "passwords.png"
